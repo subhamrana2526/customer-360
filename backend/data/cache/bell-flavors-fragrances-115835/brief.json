@@ -1,40 +1,40 @@
 {
   "customer_id": "bell-flavors-fragrances-115835",
   "company_name": "Bell Flavors & Fragrances",
-  "generated_at": "2026-04-27T18:32:21.011505Z",
+  "generated_at": "2026-04-27T21:14:10.276407Z",
   "last_touchpoint": "2026-04-10",
   "days_since_touchpoint": 17,
-  "conversation_recap": "The last conversation with Bell Flavors & Fragrances involved confirming the price of USD 3.57/Kg for an updated purchase order. There is an open commitment to receive the updated PO reflecting this price. Previously, there was a clarification about the delivery date of product BB, which was confirmed for the end of April. No unresolved issues remain from the last interactions.",
-  "customer_snapshot": "Bell Flavors & Fragrances is a mid-size manufacturer in the F&F industry, producing flavor compounds, fragrance oils, and essential oils. They have placed one order with Elchemy this year, totaling USD 21,420 for Benzyl Benzoate. The relationship appears to be in its early stages with potential for growth.",
+  "conversation_recap": "The most recent conversation with Bell Flavors & Fragrances involved confirming the price of USD 3.57/Kg for a new purchase order, with Elchemy awaiting an updated PO from Tara Gumann. There was also a clarification on a delivery date error for product BB, which will be delivered by the end of April as initially expected. The relationship appears to be in a positive phase with ongoing communication.",
+  "customer_snapshot": "Bell Flavors & Fragrances is a mid-size manufacturer in the flavors and fragrances industry, producing flavor compounds, fragrance oils, and essential oils. They have placed a total of one order with Elchemy this year, valued at USD 21,420, primarily for Benzyl Benzoate.",
   "whats_new": "No company-specific news in the period.",
-  "market_context": "The F&F industry is influenced by evolving consumer preferences, as highlighted by Bell's recent focus on micro trends. This could impact their demand for natural extracts and synthetic aroma chemicals. Additionally, their acquisition of Nardev Chemie's fragrance division suggests a strategic expansion in the fragrance sector, potentially increasing their need for diverse raw materials.",
+  "market_context": "The flavors and fragrances industry is influenced by consumer trends and preferences, as highlighted by Bell's focus on micro trends for 2026. This can affect their demand for natural extracts and synthetic aroma chemicals. Additionally, the acquisition of Nardev Chemie's fragrance division may increase their need for diverse raw materials to expand their product offerings.",
   "pitch_angles": [
     {
       "product_name": "Polysorbate 20",
-      "rationale": "Previously inquired about by Bell Flavors & Fragrances in December 2025, this product could align with their needs for emulsifying agents in flavor and fragrance formulations."
+      "rationale": "Previously inquired about in December 2025, this product could align with Bell's need for versatile emulsifiers in their flavor and fragrance formulations."
     },
     {
       "product_name": "PHENYL ACETALDEHYDE 50% PEA NAT in DPG or PEA, 50/50 cut",
-      "rationale": "This product was inquired about in September 2025, indicating a potential interest in aroma chemicals that could enhance their fragrance offerings."
+      "rationale": "This product was inquired about in September 2025 and could be relevant for Bell's aromatic compound needs."
     },
     {
       "product_name": "MANNITOL POWDER USP SYN",
-      "rationale": "Previously inquired about in September 2025, Mannitol could be relevant for their flavor compounds, offering a sweetener or bulking agent option."
+      "rationale": "Previously inquired about in September 2025, Mannitol could be a useful ingredient for Bell's flavor compounds."
     },
     {
-      "product_name": "RASPBERRY KETONE SYN",
-      "rationale": "Inquired about in September 2025, Raspberry Ketone could be a valuable addition to their flavor compounds, aligning with consumer trends for natural and fruity notes."
+      "product_name": "VANILLIN SYN",
+      "rationale": "Vanillin was part of a closed deal in August 2025, indicating potential interest in this common flavoring agent."
     },
     {
-      "product_name": "LINALOOL SYN",
-      "rationale": "Inquired about in September 2025, Linalool is a common fragrance ingredient that could support their expansion in the fragrance sector."
+      "product_name": "Linalyl Acetate",
+      "rationale": "Inquired about in September 2025, Linalyl Acetate could be a valuable addition to Bell's fragrance formulations."
     }
   ],
   "conversation_starters": [
-    "Given the recent confirmation of micro trends by Bell, how do you see these influencing your product development strategy, particularly in flavors and fragrances?",
-    "With the acquisition of Nardev Chemie's fragrance division, are there specific aroma chemicals or natural extracts you are looking to source more aggressively?",
-    "Since the last order was for Benzyl Benzoate, are there other similar products you're considering to support your fragrance oil production?",
-    "Considering the recent clarification on delivery dates, how can we better align our logistics to meet your expectations in the future?",
-    "Are there any upcoming projects or product launches at Bell that might require new or additional raw materials from Elchemy?"
+    "Given the focus on micro trends for 2026, how is Bell planning to adjust its product offerings, and can Elchemy support with specific raw materials?",
+    "With the recent acquisition of Nardev Chemie's fragrance division, are there new product lines or formulations that Elchemy can assist with?",
+    "How is Bell managing the balance between natural extracts and synthetic aroma chemicals in their product formulations?",
+    "Are there any upcoming projects or product launches where Elchemy's range of natural extracts could be beneficial?",
+    "Considering the recent delivery date clarification for product BB, are there any other logistical concerns or needs Elchemy can address?"
   ]
 }

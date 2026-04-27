@@ -110,12 +110,13 @@ function updateSignalBanner(sig) {
   const dir = sig.direction || 'flat';
   sigEl.className = `signal-card signal-${dir}`;
   sigEl.innerHTML = `
+    <div class="signal-label">Our Suggestion</div>
     <div class="signal-main">
       <span class="signal-arrow">${ARROW[dir]}</span>
       <span class="signal-pct">${fmtPct(sig.pct_change || 0)}</span>
       <span class="signal-window">over ${sig.window_days || 90}d</span>
     </div>
-    <p class="signal-line">${sig.summary_line || ''}</p>`;
+    <p class="signal-disclaimer">Based on a weighted average of input factor price changes. May be incorrect and can have a lag of 3-4 weeks.</p>`;
 }
 
 /* ─── Chart helpers ──────────────────────────────────────── */
@@ -322,12 +323,13 @@ async function renderMIProductDetail() {
     sigEl.classList.remove('empty');
     sigEl.classList.add(`signal-${dir}`);
     sigEl.innerHTML = `
+      <div class="signal-label">Our Suggestion</div>
       <div class="signal-main">
         <span class="signal-arrow">${ARROW[dir]}</span>
         <span class="signal-pct">${fmtPct(sig.pct_change || 0)}</span>
         <span class="signal-window">over ${sig.window_days || 90}d</span>
       </div>
-      <p class="signal-line">${sig.summary_line || ''}</p>`;
+        <p class="signal-disclaimer">Based on a weighted average of input factor price changes. May be incorrect and can have a lag of 3-4 weeks.</p>`;
 
     renderCharts();
     renderRecipeTable();
