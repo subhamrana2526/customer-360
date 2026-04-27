@@ -1,0 +1,40 @@
+{
+  "customer_id": "bell-flavors-fragrances-115835",
+  "company_name": "Bell Flavors & Fragrances",
+  "generated_at": "2026-04-27T18:32:21.011505Z",
+  "last_touchpoint": "2026-04-10",
+  "days_since_touchpoint": 17,
+  "conversation_recap": "The last conversation with Bell Flavors & Fragrances involved confirming the price of USD 3.57/Kg for an updated purchase order. There is an open commitment to receive the updated PO reflecting this price. Previously, there was a clarification about the delivery date of product BB, which was confirmed for the end of April. No unresolved issues remain from the last interactions.",
+  "customer_snapshot": "Bell Flavors & Fragrances is a mid-size manufacturer in the F&F industry, producing flavor compounds, fragrance oils, and essential oils. They have placed one order with Elchemy this year, totaling USD 21,420 for Benzyl Benzoate. The relationship appears to be in its early stages with potential for growth.",
+  "whats_new": "No company-specific news in the period.",
+  "market_context": "The F&F industry is influenced by evolving consumer preferences, as highlighted by Bell's recent focus on micro trends. This could impact their demand for natural extracts and synthetic aroma chemicals. Additionally, their acquisition of Nardev Chemie's fragrance division suggests a strategic expansion in the fragrance sector, potentially increasing their need for diverse raw materials.",
+  "pitch_angles": [
+    {
+      "product_name": "Polysorbate 20",
+      "rationale": "Previously inquired about by Bell Flavors & Fragrances in December 2025, this product could align with their needs for emulsifying agents in flavor and fragrance formulations."
+    },
+    {
+      "product_name": "PHENYL ACETALDEHYDE 50% PEA NAT in DPG or PEA, 50/50 cut",
+      "rationale": "This product was inquired about in September 2025, indicating a potential interest in aroma chemicals that could enhance their fragrance offerings."
+    },
+    {
+      "product_name": "MANNITOL POWDER USP SYN",
+      "rationale": "Previously inquired about in September 2025, Mannitol could be relevant for their flavor compounds, offering a sweetener or bulking agent option."
+    },
+    {
+      "product_name": "RASPBERRY KETONE SYN",
+      "rationale": "Inquired about in September 2025, Raspberry Ketone could be a valuable addition to their flavor compounds, aligning with consumer trends for natural and fruity notes."
+    },
+    {
+      "product_name": "LINALOOL SYN",
+      "rationale": "Inquired about in September 2025, Linalool is a common fragrance ingredient that could support their expansion in the fragrance sector."
+    }
+  ],
+  "conversation_starters": [
+    "Given the recent confirmation of micro trends by Bell, how do you see these influencing your product development strategy, particularly in flavors and fragrances?",
+    "With the acquisition of Nardev Chemie's fragrance division, are there specific aroma chemicals or natural extracts you are looking to source more aggressively?",
+    "Since the last order was for Benzyl Benzoate, are there other similar products you're considering to support your fragrance oil production?",
+    "Considering the recent clarification on delivery dates, how can we better align our logistics to meet your expectations in the future?",
+    "Are there any upcoming projects or product launches at Bell that might require new or additional raw materials from Elchemy?"
+  ]
+}
