@@ -1,0 +1,197 @@
+[
+  {
+    "product_id": "benzyl_alcohol",
+    "product_name": "Benzyl Alcohol",
+    "family": "toluene_derivative",
+    "direction": "up",
+    "pct_change": 0.215,
+    "window_days": 90,
+    "end_date": "2026-04-28",
+    "top_drivers": [
+      {
+        "factor_id": "toluene",
+        "factor_name": "Toluene",
+        "start_price": 5430,
+        "end_price": 6770,
+        "pct_change": 0.2468,
+        "coefficient": 0.8,
+        "weighted_contribution": 0.1974
+      },
+      {
+        "factor_id": "lpg",
+        "factor_name": "LPG",
+        "start_price": 4382,
+        "end_price": 5299,
+        "pct_change": 0.2093,
+        "coefficient": 0.05,
+        "weighted_contribution": 0.0105
+      },
+      {
+        "factor_id": "hydrochloric_acid",
+        "factor_name": "Hydrochloric acid",
+        "start_price": 108,
+        "end_price": 119,
+        "pct_change": 0.1019,
+        "coefficient": 0.06,
+        "weighted_contribution": 0.0061
+      }
+    ],
+    "summary_line": "Toluene up 24.7% drove Benzyl Alcohol estimate up 21.5%"
+  },
+  {
+    "product_id": "benzaldehyde",
+    "product_name": "Benzaldehyde",
+    "family": "toluene_derivative",
+    "direction": "up",
+    "pct_change": 0.214,
+    "window_days": 90,
+    "end_date": "2026-04-28",
+    "top_drivers": [
+      {
+        "factor_id": "toluene",
+        "factor_name": "Toluene",
+        "start_price": 5430,
+        "end_price": 6770,
+        "pct_change": 0.2468,
+        "coefficient": 0.78,
+        "weighted_contribution": 0.1925
+      },
+      {
+        "factor_id": "lpg",
+        "factor_name": "LPG",
+        "start_price": 4382,
+        "end_price": 5299,
+        "pct_change": 0.2093,
+        "coefficient": 0.06,
+        "weighted_contribution": 0.0126
+      },
+      {
+        "factor_id": "hydrochloric_acid",
+        "factor_name": "Hydrochloric acid",
+        "start_price": 108,
+        "end_price": 119,
+        "pct_change": 0.1019,
+        "coefficient": 0.08,
+        "weighted_contribution": 0.0081
+      }
+    ],
+    "summary_line": "Toluene up 24.7% drove Benzaldehyde estimate up 21.4%"
+  },
+  {
+    "product_id": "benzyl_chloride",
+    "product_name": "Benzyl Chloride",
+    "family": "toluene_derivative",
+    "direction": "up",
+    "pct_change": 0.2099,
+    "window_days": 90,
+    "end_date": "2026-04-28",
+    "top_drivers": [
+      {
+        "factor_id": "toluene",
+        "factor_name": "Toluene",
+        "start_price": 5430,
+        "end_price": 6770,
+        "pct_change": 0.2468,
+        "coefficient": 0.75,
+        "weighted_contribution": 0.1851
+      },
+      {
+        "factor_id": "hydrochloric_acid",
+        "factor_name": "Hydrochloric acid",
+        "start_price": 108,
+        "end_price": 119,
+        "pct_change": 0.1019,
+        "coefficient": 0.15,
+        "weighted_contribution": 0.0153
+      },
+      {
+        "factor_id": "lpg",
+        "factor_name": "LPG",
+        "start_price": 4382,
+        "end_price": 5299,
+        "pct_change": 0.2093,
+        "coefficient": 0.05,
+        "weighted_contribution": 0.0105
+      }
+    ],
+    "summary_line": "Toluene up 24.7% drove Benzyl Chloride estimate up 21.0%"
+  },
+  {
+    "product_id": "benzoic_acid",
+    "product_name": "Benzoic Acid",
+    "family": "toluene_derivative",
+    "direction": "up",
+    "pct_change": 0.1999,
+    "window_days": 90,
+    "end_date": "2026-04-28",
+    "top_drivers": [
+      {
+        "factor_id": "toluene",
+        "factor_name": "Toluene",
+        "start_price": 5430,
+        "end_price": 6770,
+        "pct_change": 0.2468,
+        "coefficient": 0.72,
+        "weighted_contribution": 0.1777
+      },
+      {
+        "factor_id": "lpg",
+        "factor_name": "LPG",
+        "start_price": 4382,
+        "end_price": 5299,
+        "pct_change": 0.2093,
+        "coefficient": 0.08,
+        "weighted_contribution": 0.0167
+      },
+      {
+        "factor_id": "freight_in_us_east",
+        "factor_name": "Freight India \u2192 US East",
+        "start_price": 2400,
+        "end_price": 2620,
+        "pct_change": 0.0917,
+        "coefficient": 0.05,
+        "weighted_contribution": 0.0046
+      }
+    ],
+    "summary_line": "Toluene up 24.7% drove Benzoic Acid estimate up 20.0%"
+  },
+  {
+    "product_id": "tdi",
+    "product_name": "Toluene Diisocyanate",
+    "family": "toluene_derivative",
+    "direction": "up",
+    "pct_change": 0.1967,
+    "window_days": 90,
+    "end_date": "2026-04-28",
+    "top_drivers": [
+      {
+        "factor_id": "toluene",
+        "factor_name": "Toluene",
+        "start_price": 5430,
+        "end_price": 6770,
+        "pct_change": 0.2468,
+        "coefficient": 0.65,
+        "weighted_contribution": 0.1604
+      },
+      {
+        "factor_id": "lpg",
+        "factor_name": "LPG",
+        "start_price": 4382,
+        "end_price": 5299,
+        "pct_change": 0.2093,
+        "coefficient": 0.1,
+        "weighted_contribution": 0.0209
+      },
+      {
+        "factor_id": "hydrochloric_acid",
+        "factor_name": "Hydrochloric acid",
+        "start_price": 108,
+        "end_price": 119,
+        "pct_change": 0.1019,
+        "coefficient": 0.12,
+        "weighted_contribution": 0.0122
+      }
+    ],
+    "summary_line": "Toluene up 24.7% drove Toluene Diisocyanate estimate up 19.7%"
+  }
+]

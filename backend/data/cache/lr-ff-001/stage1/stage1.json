@@ -1,6 +1,6 @@
 {
   "customer_id": "lr-ff-001",
-  "generated_at": "2026-04-27T16:13:52.705566Z",
+  "generated_at": "2026-04-27T19:23:58.377326Z",
   "thread_summaries": [
     {
       "thread_id": "b95498618e9c85e1f35fee6f1e49ddfc",
@@ -24,10 +24,10 @@
         "row@elchemy.com",
         "sebastiano.aiello@lrindustries.it"
       ],
-      "summary": "Elchemy has provided multiple quotations for Diethyl Phthalate, including CIF and DDP pricing. The customer, Sebastiano, has placed several purchase orders (PO 638, PO 639, and PO 640) which are subject to sample approval, and has amended the POs as requested.",
+      "summary": "Elchemy has provided CIF and DDP quotations for Diethyl Phthalate to the customer, Sebastiano. The customer requested a price reduction, and after discussions, multiple purchase orders (PO 638, PO 639, PO 640) were confirmed by Elchemy. The customer has amended the POs as requested.",
       "open_items": [
-        "Elchemy to send Proforma Invoices for POs 638, 639, and 640",
-        "Elchemy to confirm the dispatch planning and share further details"
+        "Elchemy to send Proforma Invoices for PO 638, PO 639, and PO 640",
+        "Elchemy to confirm the dispatch planning details after Proforma Invoice acceptance"
       ],
       "sentiment": "positive",
       "key_products_discussed": [
@@ -43,12 +43,12 @@
         "giorgia.ciaccio@lrindustries.it",
         "sebastiano.aiello@lrindustries.it"
       ],
-      "summary": "Elchemy has been negotiating pricing for Benzaldehyde with the customer, L.R. Flavours & Fragrances Industries. After several exchanges, Elchemy provided a revised price of EUR 1.87/Kg CIF Augusta, which is still higher than the customer's target price of EUR 1.79/Kg. The customer is seeking to finalize the negotiation and send a purchase order.",
+      "summary": "Elchemy has been in discussions with LR Industries regarding a quotation for Benzaldehyde. After several exchanges, Elchemy provided a revised price of EUR 1.87/Kg CIF Augusta, but LR Industries is seeking a lower price of EUR 1.79 to finalize the order.",
       "open_items": [
-        "Customer needs to confirm if the revised price of EUR 1.87/Kg is acceptable to proceed with the order.",
-        "Elchemy is awaiting feedback on the latest pricing offer."
+        "LR Industries is awaiting a response from Elchemy regarding the price adjustment to EUR 1.79.",
+        "Elchemy is considering the request for a lower price and has yet to confirm if they can meet it."
       ],
-      "sentiment": "neutral",
+      "sentiment": "cooling",
       "key_products_discussed": [
         "Benzaldehyde"
       ]
@@ -61,7 +61,7 @@
         "apurva.arora@elchemy.com",
         "sebastiano.aiello@lrindustries.it"
       ],
-      "summary": "Apurva Arora from Elchemy informed the customer that they will be out of the office and that their response will be delayed. No specific products or decisions were discussed in this brief exchange.",
+      "summary": "Apurva Arora from Elchemy has informed the customer that they will be out of the office and that their response will be delayed.",
       "open_items": [],
       "sentiment": "neutral",
       "key_products_discussed": []
@@ -74,7 +74,7 @@
         "apurva.arora@elchemy.com",
         "sebastiano.aiello@lrindustries.it"
       ],
-      "summary": "Apurva Arora from Elchemy informed the customer that they will be out of the office, which may cause a delay in response.",
+      "summary": "Apurva Arora from Elchemy informed the customer that they will be out of the office and that their response will be delayed. No specific products or commitments were discussed.",
       "open_items": [],
       "sentiment": "neutral",
       "key_products_discussed": []
@@ -87,9 +87,9 @@
         "aditya.agarwal@elchemy.com",
         "sebastiano.aiello@lrindustries.it"
       ],
-      "summary": "Elchemy is following up on two order opportunities for Benzaldehyde and Diethyl Phthalate with the customer, L.R. Flavours & Fragrances. They have shared revised price offers and are awaiting feedback to proceed further.",
+      "summary": "Elchemy discussed two order opportunities for Benzaldehyde and Diethyl Phthalate with the customer, including specific quantities and delivery dates. Revised price offers were shared, and feedback is requested to proceed further.",
       "open_items": [
-        "Customer to provide feedback on revised price offers for Benzaldehyde and Diethyl Phthalate"
+        "Customer to provide feedback on revised price offers"
       ],
       "sentiment": "positive",
       "key_products_discussed": [
@@ -105,10 +105,9 @@
         "aditya.agarwal@elchemy.com",
         "sebastiano.aiello@lrindustries.it"
       ],
-      "summary": "Elchemy followed up with Sebastiano regarding upcoming requirements for various specialty chemicals, including Diethyl Phthalate, Benzaldehyde, and Benzyl Acetate. They expressed readiness to discuss pricing and stock availability for these products.",
+      "summary": "Elchemy followed up with Sebastiano regarding his upcoming requirements for various specialty chemicals, including Diethyl Phthalate, Benzaldehyde, and Benzyl Acetate. They are ready to discuss pricing and stock for these products and are eager to close some business.",
       "open_items": [
-        "Sebastiano to confirm requirements for Diethyl Phthalate, Benzyl Acetate, and Benzaldehyde",
-        "Elchemy to share best offer for the mentioned products"
+        "Sebastiano to confirm interest in Diethyl Phthalate, Benzyl Acetate, and Benzaldehyde for the next purchase"
       ],
       "sentiment": "positive",
       "key_products_discussed": [
@@ -135,9 +134,7 @@
         "Provide the tracking number for PO 1231"
       ],
       "sentiment": "positive",
-      "key_products_discussed": [
-        "PO 1231"
-      ]
+      "key_products_discussed": []
     },
     {
       "thread_id": "229888114ee4f416c956dc0e479b7ff6",
@@ -147,9 +144,9 @@
         "aditya.agarwal@elchemy.com",
         "sebastiano.aiello@lrindustries.it"
       ],
-      "summary": "Elchemy is seeking support from L.R. Flavors & Fragrances to act as proposers for their application for membership in the International Federation of Essential Oils and Aroma Trades (IFEAT). The email emphasizes the benefits of membership for improving service and aligning with global industry regulations.",
+      "summary": "Elchemy is seeking L.R. Flavors & Fragrances to support their application for membership in the International Federation of Essential Oils and Aroma Trades (IFEAT) by acting as proposers. The email outlines the straightforward process involved in this request.",
       "open_items": [
-        "Awaiting response from L.R. Flavors & Fragrances regarding their willingness to support Elchemy's IFEAT membership application."
+        "Awaiting response from L.R. Flavors & Fragrances regarding their willingness to support Elchemy's IFEAT membership application"
       ],
       "sentiment": "positive",
       "key_products_discussed": []
@@ -162,9 +159,9 @@
         "aditya.agarwal@elchemy.com",
         "pina.saccone@lrindustries.it"
       ],
-      "summary": "Pina Saccone from L.R. Flavours & Fragrances Industries informed Aditya Agarwal about a bank error and forwarded relevant SWIFT documentation. Aditya acknowledged the email and involved the Accounts Team to address the issue further.",
+      "summary": "The email thread discusses an error made by the bank regarding a SWIFT transaction. Pina Saccone from L.R. Flavours & Fragrances Industries apologized for the inconvenience and provided the relevant documentation, while Aditya Agarwal from Elchemy has involved the Accounts Team to address the issue further.",
       "open_items": [
-        "Accounts Team to follow up with Pina regarding the bank error and SWIFT documentation"
+        "Elchemy's Accounts Team to follow up with Pina regarding the SWIFT documentation"
       ],
       "sentiment": "neutral",
       "key_products_discussed": []
@@ -177,14 +174,15 @@
         "aditya.agarwal@elchemy.com",
         "giovanni.lezzi@lrindustries.it"
       ],
-      "summary": "Elchemy has reached out to Giovanni regarding the recent India-EU Free Trade Agreement, highlighting the benefits for sourcing aroma and fragrance ingredients. They are eager to discuss how they can support Giovanni's growth in 2026 through reduced costs and improved supply chain transparency.",
+      "summary": "Elchemy is reaching out to Giovanni to discuss the opportunities arising from the recent India-EU Free Trade Agreement, which allows for duty-free access to aroma and fragrance ingredients. They aim to support Giovanni's growth in 2026 by leveraging their strengths in supply chain management and compliance.",
       "open_items": [
-        "Schedule a 15-minute introductory call to discuss opportunities and support for 2026 growth"
+        "Schedule a 15-minute introductory call to discuss opportunities related to the new FTA"
       ],
       "sentiment": "positive",
       "key_products_discussed": [
-        "aroma chemicals",
-        "fragrance ingredients"
+        "aroma and fragrance ingredients",
+        "high-quality aroma chemicals",
+        "specialty ingredients"
       ]
     }
   ],
@@ -193,7 +191,7 @@
     "total_orders": 3,
     "total_value_ytd": 133862.40000000002,
     "last_order_date": "2026-04-22",
-    "days_since_last_order": 5,
+    "days_since_last_order": 6,
     "top_products": [
       {
         "name": "Diethyl Phthalate (DEP)",
@@ -204,7 +202,108 @@
     ],
     "inquiry_count": 0,
     "inquiry_to_order_rate": 0.0,
-    "products_inquired_not_ordered": []
+    "products_inquired_not_ordered": [],
+    "open_order_products": [
+      "Diethyl Phthalate (DEP)"
+    ]
   },
-  "filtered_news": []
+  "filtered_news": [],
+  "inquired_products": [
+    {
+      "name": "Di Ethyl Phthalate (DEP)",
+      "deal_name": "L.R. Flavours & Fragrances - DEP (3 FCL) - Augusta (Italy)",
+      "deal_stage": "1082127183",
+      "deal_date": "2026-03-26",
+      "quantity": 3.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Benzaldehyde (Almond Aldehyde) with CAS Number 100-52-7",
+      "deal_name": "L.R. - Benzaldehyde (2 FCL) - Augusta (Italy)",
+      "deal_stage": "1053511753",
+      "deal_date": "2026-03-24",
+      "quantity": 2.0,
+      "is_open_deal": true
+    },
+    {
+      "name": "Maltodextrin",
+      "deal_name": "LR fragrance - Multiple - Augusta",
+      "deal_stage": "2202102501",
+      "deal_date": "2026-01-28",
+      "quantity": 1.0,
+      "is_open_deal": true
+    },
+    {
+      "name": "Corn Starch",
+      "deal_name": "LR fragrance - Multiple - Augusta",
+      "deal_stage": "2202102501",
+      "deal_date": "2026-01-28",
+      "quantity": 1.0,
+      "is_open_deal": true
+    },
+    {
+      "name": "Arabic Gum",
+      "deal_name": "LR fragrance - Multiple - Augusta",
+      "deal_stage": "2202102501",
+      "deal_date": "2026-01-28",
+      "quantity": 1.0,
+      "is_open_deal": true
+    },
+    {
+      "name": "Silicon Dioxide",
+      "deal_name": "LR fragrance - Multiple - Augusta",
+      "deal_stage": "2202102501",
+      "deal_date": "2026-01-28",
+      "quantity": 1.0,
+      "is_open_deal": true
+    },
+    {
+      "name": "Sunflower Oil",
+      "deal_name": "LR fragrance - Multiple - Augusta",
+      "deal_stage": "2202102501",
+      "deal_date": "2026-01-28",
+      "quantity": 1.0,
+      "is_open_deal": true
+    },
+    {
+      "name": "Dextrose Monohydrate",
+      "deal_name": "LR fragrance - Multiple - Augusta",
+      "deal_stage": "2202102501",
+      "deal_date": "2026-01-28",
+      "quantity": 1.0,
+      "is_open_deal": true
+    },
+    {
+      "name": "2',3-dimethyl-3',4-dioxa-2,8-dithiabicyclo(3.3.0)octane spirocyclopentan",
+      "deal_name": "L.R. Flavors & Fragrances - 2,3-dimethyl-3,4-dioxa-2,8-dithiabicyclo(3.3.0)octane spirocyclopentan Food Grade CAS: 38325-25-6 (10 GM) - Augusta (Italy)",
+      "deal_stage": "1082127186",
+      "deal_date": "2025-09-24",
+      "quantity": 0.01,
+      "is_open_deal": false
+    },
+    {
+      "name": "Synthetic Vanillin",
+      "deal_name": "L.R. Flavors & Fragrances - Synthetic Vanillin, Patchouli Dark Oil - Augusta (Italy)",
+      "deal_stage": "1082127184",
+      "deal_date": "2025-09-12",
+      "quantity": 2000.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Patchouli Dark Oil",
+      "deal_name": "L.R. Flavors & Fragrances - Synthetic Vanillin, Patchouli Dark Oil - Augusta (Italy)",
+      "deal_stage": "1082127184",
+      "deal_date": "2025-09-12",
+      "quantity": 1400.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Orange Terpenes",
+      "deal_name": "L.R. Flavors & Fragrances - Orange Terpenes (CAS:68647-72-3) - Augusta (Italy)",
+      "deal_stage": "1082127184",
+      "deal_date": "2025-09-08",
+      "quantity": 20000.0,
+      "is_open_deal": false
+    }
+  ]
 }

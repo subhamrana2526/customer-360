@@ -430,5 +430,59 @@
     "source_url": null,
     "sunsirs_id": null,
     "unit": "USD/container"
+  },
+  {
+    "id": "corn",
+    "name": "Corn",
+    "category": "agricultural",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-274.html",
+    "sunsirs_id": 274,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "soybean_meal",
+    "name": "Soybean meal",
+    "category": "agricultural",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-312.html",
+    "sunsirs_id": 312,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "white_granulated_sugar",
+    "name": "White granulated sugar",
+    "category": "agricultural",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-564.html",
+    "sunsirs_id": 564,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "soybean",
+    "name": "Soybean",
+    "category": "agricultural",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-769.html",
+    "sunsirs_id": 769,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "rapeseed_oil",
+    "name": "Rapeseed oil",
+    "category": "agricultural",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-810.html",
+    "sunsirs_id": 810,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "palm_oil",
+    "name": "Palm Oil",
+    "category": "agricultural",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-820.html",
+    "sunsirs_id": 820,
+    "unit": "RMB/ton"
   }
 ]
