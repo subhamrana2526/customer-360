@@ -1,0 +1,26 @@
+[
+  {
+    "name": "SLES 70%",
+    "category": "Surfactant",
+    "tags": ["personal care", "hair care", "body wash", "sles"],
+    "description": "Sodium Laureth Sulfate, 70% active. Primary anionic surfactant for shampoos and body washes."
+  },
+  {
+    "name": "CAPB 30%",
+    "category": "Surfactant",
+    "tags": ["personal care", "hair care", "body wash", "capb"],
+    "description": "Cocamidopropyl Betaine, amphoteric. Mildness booster, secondary surfactant."
+  },
+  {
+    "name": "Phenoxyethanol",
+    "category": "Preservative",
+    "tags": ["personal care", "preservatives", "home care"],
+    "description": "Broad-spectrum cosmetic preservative. Paraben-free formulations."
+  },
+  {
+    "name": "Glycerin USP",
+    "category": "Humectant",
+    "tags": ["personal care", "food", "humectant"],
+    "description": "Pharmaceutical-grade glycerin. Multi-use humectant."
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "customer_id": "demo-001",
+    "company_name": "Sample Personal Care Co.",
+    "website": "https://example.com",
+    "industry": "Personal Care",
+    "sub_industry": ["Hair Care", "Body Wash"],
+    "segment": "end_user",
+    "geography": "India",
+    "hubspot_company_id": null,
+    "elixir_customer_id": null,
+    "manufacturing_profile": {
+      "products_made": ["shampoos", "conditioners", "body washes"],
+      "scale": "Mid-size (50-200 cr revenue)",
+      "likely_inputs": ["SLES", "CAPB", "preservatives", "fragrance"]
+    },
+    "historical_context": "Long-standing customer of Elchemy since 2022. Primarily buys surfactants for their shampoo line. Annual GMV trending up.",
+    "notes": "Replace with real customer once HubSpot/Elixir IDs are confirmed."
+  }
+]

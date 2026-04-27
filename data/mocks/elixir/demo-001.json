@@ -1,0 +1,33 @@
+{
+  "orders": [
+    {
+      "order_id": "ORD-2026-0042",
+      "date": "2026-03-15",
+      "products": [
+        {"name": "SLES 70%", "grade": "Cosmetic", "qty": 5000, "unit": "kg", "value": 450000}
+      ],
+      "total_value": 450000,
+      "currency": "INR",
+      "status": "delivered"
+    },
+    {
+      "order_id": "ORD-2026-0021",
+      "date": "2026-01-20",
+      "products": [
+        {"name": "CAPB 30%", "grade": "Cosmetic", "qty": 2000, "unit": "kg", "value": 180000}
+      ],
+      "total_value": 180000,
+      "currency": "INR",
+      "status": "delivered"
+    }
+  ],
+  "inquiries": [
+    {
+      "inquiry_id": "INQ-2026-0099",
+      "date": "2026-04-10",
+      "products_requested": ["Phenoxyethanol"],
+      "status": "open",
+      "converted_to_order": false
+    }
+  ]
+}
