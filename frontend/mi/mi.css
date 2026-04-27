@@ -315,3 +315,21 @@
   background: var(--red);
   color: #fff;
 }
+/* ── Factor list in dashboard cards ─────────────────────── */
+.mi-factors {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.mi-factor-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+.mi-factor-name { color: var(--slate); }
+.mi-factor-delta { font-weight: 600; font-size: 13px; }
+.delta-up   { color: #2e7d32; }
+.delta-dn   { color: #ef4136; }
+.delta-flat { color: #ef7f18; }
