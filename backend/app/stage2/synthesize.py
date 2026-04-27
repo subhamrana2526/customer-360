@@ -6,25 +6,6 @@ from app.llm import call_json, load_prompt
 from app.models import Customer, PitchAngle, PrepBrief, Stage1Output
 
 
-def _filter_catalog(customer: Customer, catalog: list[dict]) -> list[dict]:
-    """Keep catalog items whose tags overlap with the customer's industry/inputs."""
-    if not catalog:
-        return []
-    targets = {customer.industry.lower()}
-    for s in customer.sub_industry or []:
-        targets.add(s.lower())
-    for p in customer.manufacturing_profile.likely_inputs:
-        targets.add(p.lower())
-
-    matched: list[dict] = []
-    for item in catalog:
-        tags = {t.lower() for t in item.get("tags", [])}
-        name = (item.get("name") or "").lower()
-        if tags & targets or any(t in name for t in targets):
-            matched.append(item)
-    return matched or catalog[:30]
-
-
 def _last_touchpoint(stage1: Stage1Output):
     candidates = [s.date_end for s in stage1.thread_summaries]
     if stage1.order_aggregate.last_order_date:
@@ -32,12 +13,11 @@ def _last_touchpoint(stage1: Stage1Output):
     return max(candidates) if candidates else None
 
 
-def synthesize(
-    customer: Customer,
-    stage1: Stage1Output,
-    product_catalog: list[dict],
-) -> PrepBrief:
-    filtered_catalog = _filter_catalog(customer, product_catalog)
+def synthesize(customer: Customer, stage1: Stage1Output) -> PrepBrief:
+    do_not_pitch = sorted(
+        {p.name for p in stage1.inquired_products if p.is_open_deal}
+        | set(stage1.order_aggregate.open_order_products)
+    )
 
     prompt = (
         load_prompt("brief_synthesis.txt")
@@ -55,7 +35,14 @@ def synthesize(
             "{filtered_news}",
             json.dumps([n.model_dump(mode="json") for n in stage1.filtered_news], indent=2),
         )
-        .replace("{filtered_product_catalog}", json.dumps(filtered_catalog, indent=2))
+        .replace(
+            "{inquired_products}",
+            json.dumps([p.model_dump(mode="json") for p in stage1.inquired_products], indent=2),
+        )
+        .replace(
+            "{do_not_pitch}",
+            json.dumps(do_not_pitch, indent=2) if do_not_pitch else "[]",
+        )
     )
 
     result = call_json(prompt, purpose="synth", temperature=0.3)
@@ -73,7 +60,6 @@ def synthesize(
         generated_at=datetime.now(timezone.utc),
         last_touchpoint=last_tp,
         days_since_touchpoint=days_since,
-        tldr=result.get("tldr", ""),
         conversation_recap=result.get("conversation_recap", ""),
         customer_snapshot=result.get("customer_snapshot", ""),
         whats_new=result.get("whats_new", ""),

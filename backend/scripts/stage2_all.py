@@ -1,14 +1,13 @@
 """Run Stage 2 (synthesize PrepBriefs) for all customers."""
 import json
 
-from app.config import CUSTOMERS_FILE, PRODUCT_CATALOG_FILE, brief_path, stage1_dir
+from app.config import CUSTOMERS_FILE, brief_path, stage1_dir
 from app.models import Customer, Stage1Output
 from app.stage2.synthesize import synthesize
 
 
 def main() -> None:
     customers = [Customer(**c) for c in json.loads(CUSTOMERS_FILE.read_text())]
-    catalog = json.loads(PRODUCT_CATALOG_FILE.read_text()) if PRODUCT_CATALOG_FILE.exists() else []
 
     for c in customers:
         print(f"-> stage2 for {c.company_name} ({c.customer_id})")
@@ -17,7 +16,7 @@ def main() -> None:
             print(f"   SKIP — no stage1.json (run stage1_all.py first)")
             continue
         s1 = Stage1Output(**json.loads(s1_path.read_text()))
-        brief = synthesize(c, s1, catalog)
+        brief = synthesize(c, s1)
         brief_path(c.customer_id).write_text(brief.model_dump_json(indent=2))
         print(f"   wrote {brief_path(c.customer_id)}")
 

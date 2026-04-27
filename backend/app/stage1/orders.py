@@ -50,6 +50,15 @@ def aggregate(raw: ElixirRaw) -> OrderAggregate:
     inquired = {p for i in inquiries for p in i.products_requested}
     gaps = sorted(inquired - ordered_products)
 
+    _closed_statuses = {"delivered", "completed", "cancelled", "closed", "rejected"}
+    open_order_products = sorted({
+        p.get("name")
+        for o in orders
+        if o.status.lower() not in _closed_statuses
+        for p in o.products
+        if p.get("name")
+    })
+
     return OrderAggregate(
         customer_id=raw.customer_id,
         total_orders=total_orders,
@@ -60,4 +69,5 @@ def aggregate(raw: ElixirRaw) -> OrderAggregate:
         inquiry_count=inquiry_count,
         inquiry_to_order_rate=rate,
         products_inquired_not_ordered=gaps,
+        open_order_products=open_order_products,
     )

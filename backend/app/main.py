@@ -114,10 +114,11 @@ def refresh(customer_id: str):
         thread_summaries=thread_summaries,
         order_aggregate=order_aggregate,
         filtered_news=filtered,
+        inquired_products=hs.inquired_products,
     )
     (stage1_dir(customer_id) / "stage1.json").write_text(stage1_out.model_dump_json(indent=2))
 
-    brief = synthesize(customer, stage1_out, _load_product_catalog())
+    brief = synthesize(customer, stage1_out)
     brief_path(customer_id).write_text(brief.model_dump_json(indent=2))
     return JSONResponse(content=json.loads(brief.model_dump_json()))
 
