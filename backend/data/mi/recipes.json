@@ -123,5 +123,26 @@
       "weight_pct": 5,
       "notes": "Export logistics"
     }
+  ],
+  "benzyl_acitate": [
+    {
+      "factor_id": "thermal_coal",
+      "weight_pct": 100.0,
+      "notes": ""
+    }
+  ],
+  "xyz": [
+    {
+      "factor_id": "lpg",
+      "weight_pct": 100.0,
+      "notes": ""
+    }
+  ],
+  "jfyg": [
+    {
+      "factor_id": "coke",
+      "weight_pct": 100.0,
+      "notes": ""
+    }
   ]
 }

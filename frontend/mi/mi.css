@@ -261,3 +261,57 @@
 .cat-fx           { background: #e3f2fd; color: #1565c0; }
 .cat-freight      { background: #f3e5f5; color: #6a1b9a; }
 .cat-na           { background: #eee;    color: var(--muted); }
+
+/* ----- Preview / empty-state mode ----- */
+.preview-badge {
+  display: inline-block;
+  background: #fff3e0;
+  color: #ef7f18;
+  border: 1px solid #ffd9a8;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+.recipe-empty {
+  text-align: left;
+  padding: 18px 14px;
+  font-size: 14px;
+  font-style: normal;
+  color: var(--slate);
+  line-height: 1.55;
+}
+.recipe-empty strong { color: var(--red); }
+.charts-empty {
+  grid-column: 1 / -1;
+  background: var(--bg);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  padding: 28px 24px;
+  text-align: center;
+}
+.charts-empty p { margin: 0 0 6px; font-size: 14px; }
+.charts-empty p:last-child { margin-bottom: 0; }
+
+/* ----- Dashboard toolbar (left of "Refresh signals") ----- */
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mi-add-product {
+  background: var(--card);
+  color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.mi-add-product:hover {
+  background: var(--red);
+  color: #fff;
+}

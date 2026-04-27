@@ -56,6 +56,14 @@ def save_recipe(product_id: str, recipe: list[dict]) -> None:
     load_recipes.cache_clear()
 
 
+def save_product(product: dict) -> None:
+    """Append a new product to products.json (idempotent on `id`) and bust cache."""
+    products = [p for p in load_products() if p["id"] != product["id"]]
+    products.append(product)
+    (MI_DATA_DIR / "products.json").write_text(json.dumps(products, indent=2))
+    load_products.cache_clear()
+
+
 def get_factor_series(factor_id: str) -> list[dict]:
     """Return [{date, price}] sorted ascending."""
     return _load_prices().get(factor_id, [])
