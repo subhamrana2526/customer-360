@@ -58,9 +58,14 @@ def _strip_body(body: str) -> str:
     return "\n".join(clean).strip()
 
 
+_MAX_BODY_CHARS = 1500
+
+
 def _format_email(e) -> str:
     ts = e.timestamp.isoformat() if e.timestamp else ""
     body = _strip_body(e.body_text)
+    if len(body) > _MAX_BODY_CHARS:
+        body = body[:_MAX_BODY_CHARS] + "\n[truncated]"
     return (
         f"--- {ts} | {e.direction} | from {e.from_address} ---\n"
         f"Subject: {e.subject}\n\n{body}\n"
@@ -75,10 +80,20 @@ def _truncate_thread(emails: list, max_keep: int = 20) -> list:
     return emails[:head] + emails[-tail:]
 
 
+_MAX_THREADS = 10
+
+
 def summarize_threads(raw: HubSpotRaw) -> list[ThreadSummary]:
     by_thread: dict[str, list] = defaultdict(list)
     for email in raw.emails:
         by_thread[email.thread_id].append(email)
+
+    # Keep only the 10 most recent threads (by latest email in each thread)
+    by_thread = dict(
+        sorted(by_thread.items(), key=lambda kv: max(e.timestamp for e in kv[1]), reverse=True)[
+            :_MAX_THREADS
+        ]
+    )
 
     prompt_template = load_prompt("thread_summary.txt")
     summaries: list[ThreadSummary] = []

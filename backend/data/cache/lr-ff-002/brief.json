@@ -1,0 +1,41 @@
+{
+  "customer_id": "lr-ff-002",
+  "company_name": "International Flavors & Fragrances Inc",
+  "generated_at": "2026-04-27T16:15:35.293047Z",
+  "last_touchpoint": "2026-04-27",
+  "days_since_touchpoint": 0,
+  "tldr": "Last touchpoint was on April 27, 2026, discussing Fenugreek Oleoresin sample dispatch. Key focus: finalize sample shipment and tracking. Strong pitch: Elchemy's food and nutrition ingredients portfolio.",
+  "conversation_recap": "Elchemy is set to send a 180g sample of Fenugreek Oleoresin to IFF's Tilburg lab, with tracking details pending. A call to discuss Elchemy's food and nutrition ingredients portfolio is also pending. Recent discussions have been positive, focusing on potential product offerings like Stevia and Monk Fruit Extract.",
+  "customer_snapshot": "IFF is a mid-size Italian F&F manufacturer producing flavors, fragrances, and aroma chemicals. They have not placed any orders with Elchemy yet, indicating an early-stage relationship with potential for growth.",
+  "whats_new": "IFF is developing a new enzyme hub in LatAm, which could impact their supply chain strategies. Additionally, their price target was recently lowered, potentially affecting financial strategies.",
+  "market_context": "The F&F industry is seeing shifts due to new trade agreements like the India-EU Free Trade Agreement, offering duty-free access to aroma and fragrance ingredients. This could influence IFF's sourcing strategies, especially for aroma chemicals.",
+  "pitch_angles": [
+    {
+      "product_name": "Fenugreek Oleoresin",
+      "rationale": "Currently in the homologation process with IFF, indicating active interest and potential for future orders."
+    },
+    {
+      "product_name": "Stevia",
+      "rationale": "Previously discussed as part of Elchemy's food and nutrition ingredients portfolio, aligning with IFF's operations."
+    },
+    {
+      "product_name": "Dextrose Anhyd 2401 Ceresole",
+      "rationale": "Discussed in past conversations with IFF, indicating interest in dextrose and starch products."
+    },
+    {
+      "product_name": "Benzyl Acetate",
+      "rationale": "Included in indicative pricing discussions for aroma chemicals, aligning with IFF's likely inputs."
+    },
+    {
+      "product_name": "Glycerin USP",
+      "rationale": "As a multi-use humectant, it fits IFF's manufacturing profile for flavors and fragrances."
+    }
+  ],
+  "conversation_starters": [
+    "Can you share any updates on the enzyme hub development in LatAm and how it might affect your sourcing strategies?",
+    "We are preparing to dispatch the Fenugreek Oleoresin sample. Are there any specific requirements or preferences for the tracking details?",
+    "Given the recent price target adjustment, are there any shifts in your procurement strategies that we should be aware of?",
+    "How has the India-EU Free Trade Agreement impacted your sourcing for aroma and fragrance ingredients?",
+    "Are there any new developments or needs in your flavor and fragrance production where Elchemy's portfolio could support?"
+  ]
+}

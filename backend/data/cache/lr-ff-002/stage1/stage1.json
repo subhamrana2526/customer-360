@@ -1,0 +1,264 @@
+{
+  "customer_id": "lr-ff-002",
+  "generated_at": "2026-04-27T16:14:23.778307Z",
+  "thread_summaries": [
+    {
+      "thread_id": "41874fd0e8b78311369f8218f66aba6b",
+      "date_start": "2026-03-31",
+      "date_end": "2026-04-27",
+      "participants": [
+        "Ignacio.Boglietti@iff.com",
+        "Luana.Oliveira@iff.com",
+        "foodingredients@elchemy.com",
+        "kanchi.agrawal@elchemy.com",
+        "maulik.mistry@elchemy.com"
+      ],
+      "summary": "Elchemy is preparing to send a 180g sample of Fenugreek Oleoresin to the Tilburg lab as part of the homologation process. The shipment is expected to be dispatched by the end of next week, with tracking details to be provided once available.",
+      "open_items": [
+        "Elchemy to dispatch the Fenugreek Oleoresin sample by the end of next week and provide tracking details."
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "Fenugreek Oleoresin"
+      ]
+    },
+    {
+      "thread_id": "8c3b3513edb573ae94c3d40abd9669f0",
+      "date_start": "2026-04-24",
+      "date_end": "2026-04-24",
+      "participants": [
+        "foodingredients@elchemy.com",
+        "marcelo.domingo@iff.com",
+        "tanmay.gholap@elchemy.com"
+      ],
+      "summary": "Tanmay Gholap from Elchemy reached out to Marcelo to introduce their portfolio of food and nutrition ingredients, highlighting various products that could support IFF's operations. Tanmay expressed interest in discussing further and requested a convenient time for a call.",
+      "open_items": [
+        "Schedule a call to discuss Elchemy's product portfolio in detail"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "Stevia",
+        "Monk Fruit Extract",
+        "Sucralose",
+        "Erythritol",
+        "Sorbitol",
+        "Maltitol",
+        "Soy Protein Isolate",
+        "Pea Protein Isolate",
+        "Caffeine",
+        "Citric Acid",
+        "Malic Acid",
+        "Sodium Citrate",
+        "Sodium Bicarbonate",
+        "Cocoa Powder",
+        "Cocoa Butter",
+        "D-Limonene",
+        "Spice Oleoresin",
+        "Guar Gum",
+        "Corn Starch"
+      ]
+    },
+    {
+      "thread_id": "e5e58cda86dc5c49428c25aaf3b93603",
+      "date_start": "2025-11-19",
+      "date_end": "2026-04-23",
+      "participants": [
+        "Ana.Zenteno@iff.com",
+        "ana.zenteno@iff.com",
+        "kanchi.agrawal@elchemy.com",
+        "maulik.mistry@elchemy.com"
+      ],
+      "summary": "Elchemy and the customer discussed the specifications and volume requirements for various Dextrose and Starch products across multiple countries. Elchemy is preparing quotes and has committed to sending samples to the customer's Mexico facility, while the customer is expected to provide target pricing and feedback on the quotes.",
+      "open_items": [
+        "Customer to provide target pricing expectations for Dextrose and Starch products.",
+        "Elchemy to send 300g samples of each material to the Mexico facility and prepare the necessary documentation."
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "Dextrose Anhyd 2401 Ceresole",
+        "Dextrose Monohydrate",
+        "Dextrose Anhyd Ex Maize St Type",
+        "Starch Modif E1450 Ex WXY MZE NGP Verifd",
+        "Purity Gum 1773",
+        "Purity Gum 2000",
+        "Starch Modified Ex Waxy Maize",
+        "Hi-Cap 100"
+      ]
+    },
+    {
+      "thread_id": "4c2519e9a73867be0730543547fbdcba",
+      "date_start": "2026-04-15",
+      "date_end": "2026-04-22",
+      "participants": [
+        "Alejandra.Reyes@iff.com",
+        "Ana.Zenteno@iff.com",
+        "alejandra.reyes@iff.com",
+        "kanchi.agrawal@elchemy.com",
+        "maulik.mistry@elchemy.com",
+        "nicky.dandwani@elchemy.com"
+      ],
+      "summary": "Elchemy is coordinating a potential meeting between their colleague Nikki and the IFF USA team while Nikki is in the US from May 18th to 31st. Ana and Alejandra from IFF have indicated that the US team managing Maltodextrin is based in Mexico, and they will inform Elchemy if a meeting can be arranged during Alejandra's tentative trip to New Jersey.",
+      "open_items": [
+        "Nikki's meeting with the IFF USA team needs to be scheduled based on Alejandra's trip confirmation."
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "Maltodextrin",
+        "ELIXIR"
+      ]
+    },
+    {
+      "thread_id": "a84a267410206ed97af73606f4e6fc91",
+      "date_start": "2025-12-05",
+      "date_end": "2026-03-31",
+      "participants": [
+        "Amanda.Krajunus@iff.com",
+        "Ana.Zenteno@iff.com",
+        "AnaLuiza.deLima@iff.com",
+        "Caue.Saramelli@iff.com",
+        "Ignacio.Boglietti@iff.com",
+        "Igor.araujo@iff.com",
+        "Kamila.Domingues@iff.com",
+        "Luana.Oliveira@iff.com",
+        "ana.tesini@iff.com",
+        "caue.saramelli@iff.com",
+        "foodingredients@elchemy.com",
+        "ignacio.boglietti@iff.com",
+        "kanchi.agrawal@elchemy.com",
+        "luana.oliveira@iff.com",
+        "maulik.mistry@elchemy.com"
+      ],
+      "summary": "The email thread discusses the approval process for the Fenugreek Oleoresin under ID record IQR0000005960. It was confirmed that a new sample will be required for the approval process, and the customer will send shipment instructions for this new sample analysis.",
+      "open_items": [
+        "Elchemy needs to send a new sample for approval under ID IQR0000006642.",
+        "Ignacio will send shipment instructions for the new sample analysis."
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "Fenugreek Oleoresin"
+      ]
+    },
+    {
+      "thread_id": "57779b5dd537851c7f9e2bf0c3761b1b",
+      "date_start": "2026-03-27",
+      "date_end": "2026-03-30",
+      "participants": [
+        "Ana.Zenteno@iff.com",
+        "kanchi.agrawal@elchemy.com"
+      ],
+      "summary": "Kanchi from Elchemy reached out to Ana at IFF to request an introduction to her colleague Alejandra in the US. Ana confirmed that she has shared Kanchi's contact information with Alejandra, and Kanchi expressed appreciation and anticipation for the upcoming connection.",
+      "open_items": [
+        "Kanchi is waiting to connect with Alejandra from the US team."
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "7c69dfbaca26d4071c1c98ba4cf92e0d",
+      "date_start": "2026-03-23",
+      "date_end": "2026-03-23",
+      "participants": [
+        "Luana.Oliveira@iff.com",
+        "kanchi.agrawal@elchemy.com"
+      ],
+      "summary": "The email from Luana Oliveira at IFF is a formal communication regarding the relationship between IFF and Elchemy, emphasizing confidentiality and privacy policies. No specific products or decisions were discussed in this message.",
+      "open_items": [],
+      "sentiment": "neutral",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "c005f5e1d9bd1b4d4dec1979c11461f1",
+      "date_start": "2026-03-20",
+      "date_end": "2026-03-21",
+      "participants": [
+        "Luana.Oliveira@iff.com",
+        "kanchi.agrawal@elchemy.com"
+      ],
+      "summary": "Luana from IFF informed Elchemy that she is unable to participate in a scheduled meeting due to health issues and requested to reschedule. Elchemy responded with understanding and proposed to reschedule the meeting for Monday, asking for a suitable time.",
+      "open_items": [
+        "Reschedule the meeting for Monday at a time that works for Luana"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "ee31a95d9db1cab0dc811405cd09ef5b",
+      "date_start": "2026-02-06",
+      "date_end": "2026-02-06",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "karla.corona@iff.com"
+      ],
+      "summary": "Elchemy provided indicative pricing for several aroma chemicals to support the customer's ingredient sourcing for 2026. They emphasized the importance of transparency and offered to schedule a call for further discussion.",
+      "open_items": [
+        "Schedule a brief 10-15 minute introductory call"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "Benzyl Acetate",
+        "Diethyl Phthalate",
+        "ISO E Super",
+        "Diphenyl Oxide"
+      ]
+    },
+    {
+      "thread_id": "0f1afe7b9ac6168578be9b613a44649c",
+      "date_start": "2026-02-05",
+      "date_end": "2026-02-05",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "carmen.rubio@iff.com"
+      ],
+      "summary": "Aditya from Elchemy reached out to Carmen to discuss the benefits of the new India-EU Free Trade Agreement, which allows for duty-free access to aroma and fragrance ingredients. Elchemy is eager to support Carmen's growth in 2026 by leveraging this agreement and offering their services.",
+      "open_items": [
+        "Schedule a 15-minute introductory call to discuss further collaboration"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "aroma and fragrance ingredients",
+        "high-quality aroma chemicals",
+        "specialty ingredients"
+      ]
+    }
+  ],
+  "order_aggregate": {
+    "customer_id": "lr-ff-002",
+    "total_orders": 0,
+    "total_value_ytd": 0.0,
+    "last_order_date": null,
+    "days_since_last_order": null,
+    "top_products": [],
+    "inquiry_count": 0,
+    "inquiry_to_order_rate": 0.0,
+    "products_inquired_not_ordered": []
+  },
+  "filtered_news": [
+    {
+      "title": "International Flavors & Fragrances developing new LatAm enzyme hub - MSN",
+      "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxNSlBfeGp1X1JmUEw1LUVzNmhqcVFTR3oxZXpjR0hzOW5qT0E0eU9SX0dwOFRWQ0JUVDhTVzlHaVVPUFZvMDFkZmRFN3JYX1phQV9VTWdvbUhSekVMM1Rwd3ROMWRoUVlPajJfUDlPUy1DU21nUXJ1aUZncjRoa3pYMnJJRG52YlZPcTAxbjNSTGFSeDhzYWhEYUFPVV9xQjBRRmJjektNY25EV2lGblpNLVQzdVdwV2VDY2VvOWh5cHdWNXp4cDFDYVRZTHY0ZDhGWUQ1MFNlemNQRXlPOWlJekZXTGdHTXQtUF9xLU9RWTNhMjJDTGx4ZFZVTXZDTU5iS0JzZXJ1VnVZZTltZHR2M3BWNjlCWXNpNmtFYUR1U2hhaXQzV2Zfa05zdXlDamtFTktmLUJHQ3RvV0FTM1ducTNwc2pWTW8xQmw3N196ZlJydF91dnJzNnlmVy1wQ3l4QzRuMU1rOVk1QQ?oc=5",
+      "date": "2026-04-27",
+      "source": "MSN",
+      "snippet": "",
+      "category": "company",
+      "why_it_matters": "The development of a new enzyme hub in LatAm could impact IFF's supply chain and sourcing strategies for aroma chemicals."
+    },
+    {
+      "title": "International Flavors & Fragrances (NYSE:IFF) Price Target Lowered to $88.00 at Oppenheimer - MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUkMwXy1IaDV5NGh6YXhkNXoxY0RRUU95aklVRjBoUEdjQm9tOExibEVqZ1dFNl9zazBrSzRCcjFQVEFvbUZyc2FDOHNpVnd3NGs5cXNKOFFRbV9VYkRpTUFZaGM1TkNXSWladzNJTDAtZ1FkUU1SQlc2WXB6X1gwYWRJckg1alJENHFhWFRnNG5qajcwREtXaTBWSXItR1hNRTF4aHpKejkxRFBvQ1lfelZmZEY5Y0RiWVVkdWx1LS1SS3hfcE81SzVBNUpVd2Y2ZUhjcw?oc=5",
+      "date": "2026-04-22",
+      "source": "MarketBeat",
+      "snippet": "",
+      "category": "company",
+      "why_it_matters": "A lowered price target may affect investor confidence and market perception of IFF, impacting their financial strategies."
+    },
+    {
+      "title": "Oppenheimer Lowers Price Target on International Flavors & Fragrances to $88 From $97, Keeps Outperform Rating - marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdmhQSHU0WUJITWpZdm9FTzlSaUJfMmtOV1R5bU5FWk1zSHFvX3N0aUZIaHdxVXRhVjhrMlhVdGNLcF9tMDJmMFdjSWNpcFB0aFp1MndCSXhibld1RUJsQkZfaGpoYXdkTG5YdElSalFscGRIY0RTUnlQUWR4TDZsaGNWQW5pT2V0N3ktVXJSMzZwX3VqT1FROEhxSkpiSUk5djFhajVwdThhX2xZT1MxY2NVZENzcktLMEFpSFFEZFh6Mk00eF92S2JfYkNHQmhwSkVuQ015MHFnMkc4QXB6ZVZB?oc=5",
+      "date": "2026-04-22",
+      "source": "marketscreener.com",
+      "snippet": "",
+      "category": "company",
+      "why_it_matters": "The price target reduction indicates potential challenges in market performance, which could influence IFF's strategic planning."
+    }
+  ]
+}

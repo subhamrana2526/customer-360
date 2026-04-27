@@ -4,15 +4,24 @@ from datetime import date, datetime, timezone
 from urllib.parse import quote
 
 import feedparser
+import requests
 
 from app.config import MACRO_NEWS_FILE
 from app.models import NewsItem, NewsRaw
+
+_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    )
+}
 
 
 def _google_news_url(company_name: str) -> str:
     return (
         f"https://news.google.com/rss/search?q=%22{quote(company_name)}%22"
-        f"&hl=en-IN&gl=IN&ceid=IN:en"
+        f"&hl=en-US&gl=US&ceid=US:en"
     )
 
 
@@ -27,7 +36,15 @@ def _parse_pubdate(entry) -> date:
 
 
 def fetch_company_news(company_name: str, limit: int = 30) -> list[NewsItem]:
-    feed = feedparser.parse(_google_news_url(company_name))
+    url = _google_news_url(company_name)
+    try:
+        resp = requests.get(url, headers=_HEADERS, timeout=10)
+        resp.raise_for_status()
+        feed = feedparser.parse(resp.text)
+    except Exception as exc:
+        print(f"[news] fetch failed for {company_name!r}: {exc}")
+        return []
+
     items: list[NewsItem] = []
     for entry in feed.entries[:limit]:
         items.append(
