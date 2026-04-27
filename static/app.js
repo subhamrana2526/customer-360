@@ -69,6 +69,8 @@ async function renderCustomerDetail() {
 
   const s1 = await api.stage1(id);
   document.getElementById('stage1').textContent = JSON.stringify(s1 || {}, null, 2);
+  const link = document.getElementById('stage1-detail-link');
+  if (link) link.href = `/customers/${id}/stage1`;
 
   document.getElementById('refresh').onclick = async () => {
     const btn = document.getElementById('refresh');

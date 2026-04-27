@@ -132,4 +132,9 @@ def customer_page(customer_id: str):
     return FileResponse(STATIC_DIR / "customer.html")
 
 
+@app.get("/customers/{customer_id}/stage1")
+def stage1_page(customer_id: str):
+    return FileResponse(STATIC_DIR / "stage1.html")
+
+
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
