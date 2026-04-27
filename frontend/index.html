@@ -2,20 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Elchemy Customer 360</title>
-  <link rel="stylesheet" href="/static/style.css?v=3" />
+  <title>Elchemy Pulse</title>
+  <link rel="stylesheet" href="/static/style.css?v=7" />
 </head>
 <body>
-  <header>
-    <h1>Elchemy <span class="accent">Customer 360</span></h1>
-    <p class="tag">Sales Prep Briefs</p>
+  <header class="app-header">
+    <div class="app-brand">
+      <h1 class="app-title">Elchemy <span class="accent">Pulse</span></h1>
+      <p class="app-tagline">Customer &amp; Market Intelligence</p>
+    </div>
     <nav class="tabs">
       <a href="/" class="tab active">Customer 360</a>
       <a href="/mi" class="tab">Market Intelligence</a>
     </nav>
   </header>
+
   <main>
-    <div class="list-toolbar">
+    <div class="page-toolbar">
+      <div>
+        <h2 class="page-title">Customers</h2>
+        <p class="page-sub">Sales prep briefs across all accounts</p>
+      </div>
       <button id="add-customer-btn" class="add-btn">+ Add Customer</button>
     </div>
     <div id="customer-grid" class="grid"></div>
@@ -47,7 +54,7 @@
     </div>
   </div>
 
-  <script src="/static/app.js?v=3"></script>
+  <script src="/static/app.js?v=7"></script>
   <script>renderCustomerList();</script>
 </body>
 </html>

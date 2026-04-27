@@ -3,28 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <title>Market Intelligence — Elchemy</title>
-  <link rel="stylesheet" href="/static/style.css?v=4" />
-  <link rel="stylesheet" href="/static/mi/mi.css?v=4" />
+  <link rel="stylesheet" href="/static/style.css?v=7" />
+  <link rel="stylesheet" href="/static/mi/mi.css?v=7" />
 </head>
 <body>
-  <header>
-    <h1>Elchemy <span class="accent">Market Intelligence</span></h1>
-    <p class="tag">Input factors → directional product signals</p>
+  <header class="app-header">
+    <div class="app-brand">
+      <h1 class="app-title">Elchemy <span class="accent">Pulse</span></h1>
+      <p class="app-tagline">Customer &amp; Market Intelligence</p>
+    </div>
     <nav class="tabs">
       <a href="/" class="tab">Customer 360</a>
       <a href="/mi" class="tab active">Market Intelligence</a>
     </nav>
   </header>
   <main>
-    <div class="mi-toolbar">
-      <h2 class="mi-section-title">Toluene Derivatives — 30 day outlook</h2>
+    <div class="page-toolbar">
+      <div>
+        <h2 class="page-title">Toluene Derivatives</h2>
+        <p class="page-sub">Input factors &rarr; directional product signals (30 day outlook)</p>
+      </div>
       <button id="mi-refresh" class="mi-refresh">Refresh signals</button>
     </div>
     <div id="mi-dashboard" class="mi-grid">
       <p class="empty">Loading signals…</p>
     </div>
   </main>
-  <script src="/static/mi/mi.js?v=4"></script>
+  <script src="/static/mi/mi.js?v=7"></script>
   <script>renderMIDashboard();</script>
 </body>
 </html>

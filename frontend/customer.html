@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Customer Brief — Elchemy</title>
-  <link rel="stylesheet" href="/static/style.css" />
-  <link rel="stylesheet" href="/static/stage1.css" />
+  <link rel="stylesheet" href="/static/style.css?v=7" />
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
@@ -13,28 +12,48 @@
     <h1 id="company-name">Loading…</h1>
     <div id="meta" class="meta"></div>
   </header>
-  <main class="customer-detail">
-    <section id="brief" class="brief">Loading brief…</section>
-    <aside id="raw-inspectors" class="rail">
-      <details><summary>Raw HubSpot</summary><pre id="raw-hubspot">—</pre></details>
-      <details><summary>Raw Elixir</summary><pre id="raw-elixir">—</pre></details>
-      <details><summary>Raw News</summary><pre id="raw-news">—</pre></details>
+
+  <main class="brief-page">
+    <!-- Stats strip -->
+    <section id="stats-strip" class="stats-strip"></section>
+
+    <!-- Action bar -->
+    <div class="brief-actions">
+      <a id="detail-link" class="brief-link" href="#">Detailed analysis &rarr;</a>
+      <button id="refresh" class="brief-refresh-btn">Refresh Brief</button>
+    </div>
+
+    <!-- Brief grid -->
+    <section id="brief" class="brief-grid">
+      <div class="brief-skeleton">Loading brief…</div>
+    </section>
+
+    <!-- Data sources (collapsed by default) -->
+    <section class="data-sources">
       <details>
         <summary>
-          <span>Stage 1 output</span>
-          <a id="stage1-detail-link"
-             class="stage1-cta"
-             href="#"
-             target="_blank"
-             rel="noopener"
-             onclick="event.stopPropagation()">View full →</a>
+          <span class="ds-label">Data sources</span>
+          <span class="ds-hint">Raw inputs used to generate this brief</span>
         </summary>
-        <pre id="stage1">—</pre>
+        <div class="ds-grid">
+          <details class="ds-item">
+            <summary><span class="ds-icon hs">HS</span> HubSpot conversations</summary>
+            <pre id="raw-hubspot">—</pre>
+          </details>
+          <details class="ds-item">
+            <summary><span class="ds-icon ex">EX</span> Elixir orders</summary>
+            <pre id="raw-elixir">—</pre>
+          </details>
+          <details class="ds-item">
+            <summary><span class="ds-icon nw">NW</span> News feed</summary>
+            <pre id="raw-news">—</pre>
+          </details>
+        </div>
       </details>
-    </aside>
+    </section>
   </main>
-  <button id="refresh" class="refresh-btn">Refresh Brief</button>
-  <script src="/static/app.js"></script>
+
+  <script src="/static/app.js?v=7"></script>
   <script>renderCustomerDetail();</script>
 </body>
 </html>

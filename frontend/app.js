@@ -68,22 +68,89 @@ function _closeModal() {
   document.getElementById('ac-submit').disabled = false;
 }
 
-function renderBrief(brief) {
-  if (!brief) return '<p>No brief yet. Click <strong>Refresh Brief</strong>.</p>';
-  const angles = (brief.pitch_angles || [])
-    .map(p => `<li><strong>${p.product_name}</strong>: ${p.rationale}</li>`)
-    .join('');
-  const starters = (brief.conversation_starters || [])
-    .map(s => `<li>${s}</li>`)
-    .join('');
+function _briefCard({ title, span = 1, body }) {
   return `
-    <h2>Conversation recap</h2><p>${brief.conversation_recap}</p>
-    <h2>Customer snapshot</h2><p>${brief.customer_snapshot}</p>
-    <h2>What's new</h2><p>${brief.whats_new}</p>
-    <h2>Market context</h2><p>${brief.market_context}</p>
-    <h2>Pitch angles</h2><ul>${angles}</ul>
-    <h2>Conversation starters</h2><ul>${starters}</ul>
-  `;
+    <article class="brief-card brief-card-${span}">
+      <div class="brief-card-header">
+        <h2 class="brief-card-title">${title}</h2>
+      </div>
+      <div class="brief-card-body">${body}</div>
+    </article>`;
+}
+
+function renderBrief(brief) {
+  if (!brief) {
+    return '<div class="brief-empty">No brief yet. Click <strong>Refresh Brief</strong> to generate.</div>';
+  }
+
+  const angles = (brief.pitch_angles || []).length
+    ? `<ul class="pitch-list">${brief.pitch_angles.map(p => `
+        <li>
+          <div class="pitch-product">${p.product_name}</div>
+          <div class="pitch-rationale">${p.rationale}</div>
+        </li>`).join('')}</ul>`
+    : '<p class="brief-empty-text">No pitch angles surfaced.</p>';
+
+  const starters = (brief.conversation_starters || []).length
+    ? `<ul class="starter-list">${brief.conversation_starters.map(s => `<li>${s}</li>`).join('')}</ul>`
+    : '<p class="brief-empty-text">No conversation starters yet.</p>';
+
+  return [
+    _briefCard({ title: 'Conversation recap',    span: 2, body: `<p>${brief.conversation_recap || '—'}</p>` }),
+    _briefCard({ title: 'Customer snapshot',     span: 1, body: `<p>${brief.customer_snapshot || '—'}</p>` }),
+    _briefCard({ title: "What's new",            span: 1, body: `<p>${brief.whats_new || '—'}</p>` }),
+    _briefCard({ title: 'Market context',        span: 2, body: `<p>${brief.market_context || '—'}</p>` }),
+    _briefCard({ title: 'Pitch angles',          span: 2, body: angles }),
+    _briefCard({ title: 'Conversation starters', span: 2, body: starters }),
+  ].join('');
+}
+
+function _statCard(value, label) {
+  return `
+    <div class="stat-card">
+      <div class="stat-value">${value}</div>
+      <div class="stat-label">${label}</div>
+    </div>`;
+}
+
+function _formatCurrency(n) {
+  if (n == null) return '—';
+  if (n >= 1_000_000) return (n / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
+  if (n >= 1_000)     return Math.round(n).toLocaleString();
+  return Math.round(n).toString();
+}
+
+function _daysBetween(isoDate) {
+  if (!isoDate) return null;
+  const d = new Date(isoDate);
+  const now = new Date();
+  return Math.max(0, Math.floor((now - d) / (1000 * 60 * 60 * 24)));
+}
+
+function renderStatsStrip(stage1, raw) {
+  const root = document.getElementById('stats-strip');
+  if (!root) return;
+
+  const oa = stage1?.order_aggregate || {};
+  const threads = (stage1?.thread_summaries || []).length;
+  const news = (stage1?.filtered_news || []).length;
+  const inquiredCount = (raw?.hubspot?.inquired_products || []).length;
+
+  // Last activity = newer of last_order_date and most-recent thread date_end
+  const threadEnds = (stage1?.thread_summaries || []).map(t => t.date_end).filter(Boolean);
+  const lastThread = threadEnds.length ? threadEnds.sort().slice(-1)[0] : null;
+  const lastOrder = oa.last_order_date || null;
+  const lastActivityDate = [lastThread, lastOrder].filter(Boolean).sort().slice(-1)[0] || null;
+  const daysSince = _daysBetween(lastActivityDate);
+
+  root.innerHTML = [
+    _statCard(oa.total_orders ?? '—',                                    'Total Orders'),
+    _statCard(oa.total_value_ytd != null ? _formatCurrency(oa.total_value_ytd) : '—', 'Value YTD'),
+    _statCard(daysSince != null ? `${daysSince}d` : '—',                 'Since Last Activity'),
+    _statCard(threads || '—',                                            'Email Threads'),
+    _statCard(inquiredCount || '—',                                      'Inquired Products'),
+    _statCard(news || '—',                                               'Recent News'),
+  ].join('');
 }
 
 async function renderCustomerDetail() {
@@ -92,21 +159,30 @@ async function renderCustomerDetail() {
 
   const customer = await api.customer(id);
   document.getElementById('company-name').textContent = customer.company_name;
-  document.getElementById('meta').textContent =
-    `${customer.industry} · ${customer.geography} · ${customer.segment}`;
+  document.getElementById('meta').innerHTML = `
+    <span class="meta-pill">${customer.industry}</span>
+    <span class="meta-pill">${customer.geography}</span>
+    <span class="meta-pill">${customer.segment}</span>`;
 
-  const brief = await api.brief(id);
+  // Detail-analysis link (replaces the old "Stage 1 output" CTA)
+  const detailLink = document.getElementById('detail-link');
+  if (detailLink) {
+    detailLink.href = `/customers/${id}/stage1`;
+    detailLink.target = '_blank';
+    detailLink.rel = 'noopener';
+  }
+
+  const [brief, raw, stage1] = await Promise.all([
+    api.brief(id),
+    api.raw(id),
+    api.stage1(id),
+  ]);
+
+  renderStatsStrip(stage1, raw);
   document.getElementById('brief').innerHTML = renderBrief(brief);
-
-  const raw = await api.raw(id);
   document.getElementById('raw-hubspot').textContent = JSON.stringify(raw.hubspot || {}, null, 2);
   document.getElementById('raw-elixir').textContent = JSON.stringify(raw.elixir || {}, null, 2);
   document.getElementById('raw-news').textContent = JSON.stringify(raw.news || {}, null, 2);
-
-  const s1 = await api.stage1(id);
-  document.getElementById('stage1').textContent = JSON.stringify(s1 || {}, null, 2);
-  const link = document.getElementById('stage1-detail-link');
-  if (link) link.href = `/customers/${id}/stage1`;
 
   document.getElementById('refresh').onclick = async () => {
     const btn = document.getElementById('refresh');
@@ -115,6 +191,9 @@ async function renderCustomerDetail() {
     try {
       const fresh = await api.refresh(id);
       document.getElementById('brief').innerHTML = renderBrief(fresh);
+      // Re-pull stage1 + raw to refresh stats
+      const [s1New, rawNew] = await Promise.all([api.stage1(id), api.raw(id)]);
+      renderStatsStrip(s1New, rawNew);
     } catch (e) {
       alert('Refresh failed: ' + e);
     } finally {
