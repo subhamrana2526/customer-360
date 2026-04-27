@@ -1,0 +1,520 @@
+{
+  "customer_id": "lr-ff-001",
+  "generated_at": "2026-04-27T13:57:35.996539Z",
+  "thread_summaries": [
+    {
+      "thread_id": "b95498618e9c85e1f35fee6f1e49ddfc",
+      "date_start": "2025-10-30",
+      "date_end": "2026-04-24",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "ankit.singh@elchemy.com",
+        "aroma@elchemy.com",
+        "carlo.palmeri@lrindustries.it",
+        "francesco.platania@lrindustries.it",
+        "giorgia.ciaccio@lrindustries.it",
+        "giovanni.lezzi@lrindustries.it",
+        "giuliano.ursino@lrindustries.it",
+        "jitesh.chauhan@elchemy.com",
+        "lina.jadhav@elchemy.com",
+        "michele.spadaro@lrindustries.it",
+        "ops@elchemy.com",
+        "ow@elchemy.com",
+        "pina.saccone@lrindustries.it",
+        "row@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Elchemy has provided multiple quotations for Diethyl Phthalate, including CIF and DDP pricing. The customer, Sebastiano, has submitted several purchase orders (PO 638, PO 639, and PO 640) subject to sample approval, and Elchemy has confirmed receipt of these orders and will provide proforma invoices for review.",
+      "open_items": [
+        "Elchemy to send proforma invoices for PO 638, PO 639, and PO 640",
+        "Sebastiano to confirm the proforma invoices and revise the POs in the name of Elchemy INC"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "Diethyl Phthalate"
+      ]
+    },
+    {
+      "thread_id": "0e33714df59d362ac3da3ead69698b62",
+      "date_start": "2026-03-24",
+      "date_end": "2026-04-23",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "giorgia.ciaccio@lrindustries.it",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Elchemy has been negotiating pricing for Benzaldehyde with LR Industries. After several exchanges, Elchemy provided a revised offer of EUR 1.87/Kg CIF Augusta, which is still above the customer's target price of EUR 1.79/Kg. The customer is seeking to finalize the negotiation and send a purchase order.",
+      "open_items": [
+        "LR Industries is considering Elchemy's revised offer of EUR 1.87/Kg and has requested a target price of EUR 1.79 to close the negotiation.",
+        "Elchemy is awaiting a purchase order from LR Industries."
+      ],
+      "sentiment": "cooling",
+      "key_products_discussed": [
+        "Benzaldehyde"
+      ]
+    },
+    {
+      "thread_id": "3afac851fd340c27d519a25dc2085937",
+      "date_start": "2026-04-20",
+      "date_end": "2026-04-20",
+      "participants": [
+        "apurva.arora@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Apurva Arora from Elchemy informed the customer that they will be out of the office and that their response will be delayed. No specific products or commitments were discussed in this brief communication.",
+      "open_items": [],
+      "sentiment": "neutral",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "11aa0e738c8627645306603b93487587",
+      "date_start": "2026-04-17",
+      "date_end": "2026-04-17",
+      "participants": [
+        "apurva.arora@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Apurva Arora from Elchemy has informed the customer that they will be out of the office, resulting in a slight delay in response.",
+      "open_items": [],
+      "sentiment": "neutral",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "9a1f8ece8891ee9e2df0723fa8623bfe",
+      "date_start": "2026-04-14",
+      "date_end": "2026-04-14",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Elchemy discussed two order opportunities for Benzaldehyde and Diethyl Phthalate with the customer. They have shared revised price offers and are awaiting feedback to proceed further.",
+      "open_items": [
+        "Customer to provide feedback on revised price offers for Benzaldehyde and Diethyl Phthalate"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "Benzaldehyde",
+        "Diethyl Phthalate"
+      ]
+    },
+    {
+      "thread_id": "f964013a033163c459f485e9f924ee07",
+      "date_start": "2026-02-03",
+      "date_end": "2026-03-24",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Elchemy followed up with Sebastiano regarding his upcoming requirements for various specialty chemicals, including Diethyl Phthalate, Benzaldehyde, and Benzyl Acetate. They are ready to discuss pricing and stock for these products and are looking to close some business.",
+      "open_items": [
+        "Sebastiano to confirm interest in Diethyl Phthalate, Benzyl Acetate, and Benzaldehyde for next purchase"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "Diethyl Phthalate",
+        "Benzaldehyde",
+        "Benzyl Acetate"
+      ]
+    },
+    {
+      "thread_id": "d584a779a580138245e38077bb18a392",
+      "date_start": "2026-02-26",
+      "date_end": "2026-03-16",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "aroma@elchemy.com",
+        "lina.jadhav@elchemy.com",
+        "michele.spadaro@lrindustries.it",
+        "ops@elchemy.com",
+        "pina.saccone@lrindustries.it",
+        "row@elchemy.com"
+      ],
+      "summary": "The email thread discusses the shipment of original documents for PO 1231, which was confirmed to be dispatched on March 2, 2026. Michele Spadaro requested the tracking number for the shipment, and Pina Saccone later confirmed that the documents were expected to arrive at the Catania branch on March 11, 2026.",
+      "open_items": [
+        "Provide the tracking number for PO 1231"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "PO 1231"
+      ]
+    },
+    {
+      "thread_id": "43a8758c5789bbf3ef897a65e1a0f143",
+      "date_start": "2026-02-26",
+      "date_end": "2026-02-26",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "pina.saccone@lrindustries.it"
+      ],
+      "summary": "The email thread discusses an error made by the bank regarding a SWIFT transaction. Pina Saccone from L.R. Flavours & Fragrances Industries apologized for the inconvenience and provided the relevant documentation, while Aditya Agarwal from Elchemy has involved the Accounts Team to address the issue.",
+      "open_items": [
+        "Accounts Team to follow up with Pina regarding the SWIFT documentation"
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "229888114ee4f416c956dc0e479b7ff6",
+      "date_start": "2026-02-26",
+      "date_end": "2026-02-26",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Elchemy is seeking support from L.R. Flavors & Fragrances to act as proposers for their application to the International Federation of Essential Oils and Aroma Trades (IFEAT). They believe that this membership will enhance their service and alignment with global industry regulations.",
+      "open_items": [
+        "Awaiting response from L.R. Flavors & Fragrances regarding their willingness to support Elchemy's IFEAT membership application."
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "ecc1cfa188c95990d5966ea3b44bf316",
+      "date_start": "2026-02-05",
+      "date_end": "2026-02-05",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Aditya from Elchemy reached out to Sebastiano to discuss the recent India-EU Free Trade Agreement and its benefits for sourcing aroma and fragrance ingredients. He proposed a brief call to discuss Sebastiano's 2026 volume requirements and how Elchemy can support his purchasing plans.",
+      "open_items": [
+        "Schedule a 15-minute introductory virtual call next week",
+        "Sebastiano to share current ingredient wishlist for a quote"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "aroma chemicals",
+        "specialty ingredients"
+      ]
+    },
+    {
+      "thread_id": "6b8e516f6b90b50b153e48c6b3c3b3c2",
+      "date_start": "2026-02-05",
+      "date_end": "2026-02-05",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "giovanni.lezzi@lrindustries.it"
+      ],
+      "summary": "Aditya from Elchemy reached out to Giovanni to discuss the benefits of the recently concluded India-EU Free Trade Agreement, which offers duty-free access to Indian aroma and fragrance ingredients. He proposed a brief call to discuss Giovanni's 2026 volume requirements and how Elchemy can support his purchasing plans.",
+      "open_items": [
+        "Giovanni to suggest a time for a virtual call next week",
+        "Giovanni to share his current ingredient wishlist for a quote"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "aroma chemicals",
+        "specialty ingredients"
+      ]
+    },
+    {
+      "thread_id": "42b55cb648ea3271c89a9f1ee226fdea",
+      "date_start": "2025-12-16",
+      "date_end": "2026-01-20",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "ankit.singh@elchemy.com",
+        "carlo.palmeri@lrindustries.it",
+        "francesco.platania@lrindustries.it",
+        "jitesh.chauhan@elchemy.com",
+        "lina.jadhav@elchemy.com",
+        "michele.spadaro@lrindustries.it",
+        "ops@elchemy.com",
+        "ow@elchemy.com",
+        "pina.saccone@lrindustries.it"
+      ],
+      "summary": "The email thread discusses the shipment and documentation related to a quotation request for Diethyl Phthalate. It was confirmed that the original documents have arrived at the Reggio Emilia office, and there is a delay in the shipment expected at the end of January.",
+      "open_items": [
+        "Ship the original documents as soon as possible",
+        "Send CMA CGM Bill of Lading and Waybill number"
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "Diethyl Phthalate"
+      ]
+    },
+    {
+      "thread_id": "eebadef5a5209d24d902ba9f47bd2f08",
+      "date_start": "2026-01-14",
+      "date_end": "2026-01-14",
+      "participants": [
+        "info@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Elchemy sent post-shipment documents for a recent order to L.R. Flavours & Fragrances Industries S.p.A. and requested that they review the documents at their earliest convenience.",
+      "open_items": [
+        "Customer to review the post-shipment documents"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "c441fe70764ab4aa4577fbd9792f25b6",
+      "date_start": "2025-12-08",
+      "date_end": "2026-01-12",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Elchemy reached out to Sebastiano to schedule a customer feedback call and discuss collaboration opportunities, specifically regarding Benzyl Acetate requirements. They expressed a desire to understand Sebastiano's experience and improve their services based on his feedback.",
+      "open_items": [
+        "Sebastiano to suggest a time for the feedback call",
+        "Elchemy to schedule a virtual call to discuss feedback and collaboration"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "Benzyl Acetate"
+      ]
+    },
+    {
+      "thread_id": "96ba553ca4b0140dd74d3706c0e649cf",
+      "date_start": "2025-12-24",
+      "date_end": "2025-12-24",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "giuliano.ursino@lrindustries.it",
+        "jitesh.chauhan@elchemy.com"
+      ],
+      "summary": "The customer confirmed that the product related to Lot EL16122025981 – PO 1230 is compliant with their quality standards and approved proceeding with the order. Elchemy acknowledged the confirmation and stated they will dispatch the order while providing the Certificate of Analysis.",
+      "open_items": [
+        "Elchemy to dispatch PO 1230 and keep the customer updated on further details"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "Lot EL16122025981",
+        "PO 1230"
+      ]
+    },
+    {
+      "thread_id": "2ededfca2a3cb055364b321024ab005b",
+      "date_start": "2025-12-04",
+      "date_end": "2025-12-04",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "quality.fragrances@lrindustries.it"
+      ],
+      "summary": "Elchemy provided the complete regulatory documentation for DIETHYL PHTHALATE (DEP) as requested by the customer. The customer confirmed that the product meets their specifications and approved proceeding with order PO 1229.",
+      "open_items": [
+        "Elchemy to proceed with the shipment of PO 1229 and keep the customer updated on progress."
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "DIETHYL PHTHALATE (DEP)"
+      ]
+    },
+    {
+      "thread_id": "4952108d111b4ee5f41894170cc2ca01",
+      "date_start": "2025-11-18",
+      "date_end": "2025-12-02",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "carlo.palmeri@lrindustries.it",
+        "francesco.platania@lrindustries.it",
+        "jitesh.chauhan@elchemy.com",
+        "lina.jadhav@elchemy.com",
+        "michele.spadaro@lrindustries.it",
+        "ops@elchemy.com",
+        "pina.saccone@lrindustries.it",
+        "row@elchemy.com"
+      ],
+      "summary": "The email thread primarily discusses the shipment and documentation related to Purchase Order 779 for Aldeide Benzoica. Elchemy confirmed that the sample has been shipped and approved, but there were ongoing issues with the original documents and customs clearance requirements, leading to urgent requests from the customer for various documents.",
+      "open_items": [
+        "Elchemy needs to send the waybill to the customer.",
+        "Elchemy must provide the IMO declaration to the customer."
+      ],
+      "sentiment": "cooling",
+      "key_products_discussed": [
+        "Aldeide Benzoica"
+      ]
+    },
+    {
+      "thread_id": "7fad7873389b2f205dbb7f6377073bb0",
+      "date_start": "2025-10-30",
+      "date_end": "2025-11-25",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Elchemy is following up with Sebastiano regarding the ongoing inquiry for 2000 Kg of Synthetic Vanillin. They are seeking confirmation on whether the order is still active and expressing eagerness to assist in closing the deal.",
+      "open_items": [
+        "Sebastiano needs to confirm if the Synthetic Vanillin order is still active or if it should be closed."
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "Synthetic Vanillin"
+      ]
+    },
+    {
+      "thread_id": "61ee2f3dab5ec7c88a9d575d23c1d830",
+      "date_start": "2025-10-30",
+      "date_end": "2025-11-25",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Elchemy is following up with Sebastiano regarding the Orange Terpenes purchase of 20 MT, inquiring if the requirements are still active and expressing eagerness to assist in closing the order. They have not received a response for almost three months and are seeking feedback to determine the next steps.",
+      "open_items": [
+        "Sebastiano needs to confirm if the Orange Terpenes requirements are still active or if the order should be closed."
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "Orange Terpenes"
+      ]
+    },
+    {
+      "thread_id": "4028a8cb49bd291b5b3d9bf5a3191841",
+      "date_start": "2025-10-30",
+      "date_end": "2025-11-25",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Elchemy has followed up with Sebastiano regarding the ongoing requirement for 1400 Kg of Patchouli Dark Oil. They are seeking clarity on whether the order is still active and expressing eagerness to assist in closing the deal.",
+      "open_items": [
+        "Sebastiano needs to provide feedback on the status of the Patchouli Oil order."
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "Patchouli Dark Oil"
+      ]
+    },
+    {
+      "thread_id": "af27b2ed1efb4388460524526e30273d",
+      "date_start": "2025-11-20",
+      "date_end": "2025-11-24",
+      "participants": [
+        "anthonyn@cjpchemicals.com",
+        "mandlam@cjpchemicals.co.za",
+        "pradeep.attal@elchemy.com"
+      ],
+      "summary": "Elchemy has provided competitive offers for CAPB 35% and Caustic Soda Flakes to CJP Chemicals. CJP has expressed interest in a quote for 6mt of CAPB 30% in 200kg drums for a tender in Q1 2026, and Elchemy is preparing an offer for this request.",
+      "open_items": [
+        "Elchemy to provide a quote for 6mt of CAPB 30% in 200kg drums on FOB basis.",
+        "CJP to provide feedback on the quotation and COA for CAPB."
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "CAPB 35%",
+        "Caustic Soda Flakes",
+        "CAPB 30%"
+      ]
+    },
+    {
+      "thread_id": "af2775702c5f950803fcb8a126403649",
+      "date_start": "2025-11-24",
+      "date_end": "2025-11-24",
+      "participants": [
+        "ankit.singh@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Ankit Singh from Elchemy is currently out of the office and unable to respond to the quotation request for Diethyl Phthalate related to PO 1229. There is no further discussion or decision made in this email thread.",
+      "open_items": [
+        "Awaiting response from Ankit Singh regarding the quotation for Diethyl Phthalate"
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "Diethyl Phthalate"
+      ]
+    },
+    {
+      "thread_id": "c4e0e20abecdfe7b948d5117db9856a6",
+      "date_start": "2025-11-20",
+      "date_end": "2025-11-20",
+      "participants": [
+        "ankit.singh@elchemy.com",
+        "pina.saccone@lrindustries.it"
+      ],
+      "summary": "Ankit Singh from Elchemy is currently out of the office and has not addressed the quotation request for Diethyl Phthalate related to PO 1231. The email thread indicates a pending response regarding this request.",
+      "open_items": [
+        "Awaiting response from Ankit Singh regarding the quotation for Diethyl Phthalate."
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "Diethyl Phthalate"
+      ]
+    },
+    {
+      "thread_id": "719c6ad223ef3e9792f9d6c89535a484",
+      "date_start": "2025-11-20",
+      "date_end": "2025-11-20",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "carlo.palmeri@lrindustries.it",
+        "francesco.platania@lrindustries.it",
+        "jitesh.chauhan@elchemy.com",
+        "lina.jadhav@elchemy.com",
+        "michele.spadaro@lrindustries.it",
+        "ops@elchemy.com",
+        "row@elchemy.com"
+      ],
+      "summary": "Michele Spadaro from LR Industries is inquiring about the update on Purchase Order 779/00. There has been no response yet from Elchemy regarding this request.",
+      "open_items": [
+        "Provide an update on Purchase Order 779/00"
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "fe4e2bdbfa54ab8b25a54424ed5bea03",
+      "date_start": "2025-11-17",
+      "date_end": "2025-11-17",
+      "participants": [
+        "ankit.singh@elchemy.com",
+        "sebastiano.aiello@lrindustries.it"
+      ],
+      "summary": "Ankit Singh from Elchemy is currently out of the office and has not addressed the quotation request for Diethyl Phthalate related to PO 1229. There is no decision made yet regarding the request.",
+      "open_items": [
+        "Awaiting response from Ankit Singh regarding the quotation for Diethyl Phthalate"
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "Diethyl Phthalate"
+      ]
+    },
+    {
+      "thread_id": "1b2b2813130caf667b26d5591fd788ce",
+      "date_start": "2025-10-31",
+      "date_end": "2025-11-06",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "carlo.palmeri@lrindustries.it",
+        "giovanni.lezzi@lrindustries.it",
+        "giuliano.ursino@lrindustries.it",
+        "jitesh.chauhan@elchemy.com",
+        "michele.spadaro@lrindustries.it",
+        "ops@elchemy.com",
+        "roberta.viola@lrindustries.it",
+        "row@elchemy.com",
+        "sebastiano.aiello@lrindustries.it",
+        "shubham.yadav@elchemy.com",
+        "varun.singh@elchemy.com"
+      ],
+      "summary": "The customer, L.R. Flavours & Fragrance, raised concerns regarding discrepancies in the batch numbers of Benzaldehyde received compared to what was documented. Elchemy provided clarification on the batch numbers and committed to issuing corrected delivery documentation to resolve the issue.",
+      "open_items": [
+        "Elchemy to issue a corrected delivery document or revised packing list reflecting the correct batch number (BCHO25E/17)."
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "Benzaldehyde"
+      ]
+    }
+  ],
+  "order_aggregate": {
+    "customer_id": "lr-ff-001",
+    "total_orders": 3,
+    "total_value_ytd": 133862.40000000002,
+    "last_order_date": "2026-04-22",
+    "days_since_last_order": 5,
+    "top_products": [
+      {
+        "name": "Diethyl Phthalate (DEP)",
+        "qty": 80640.0,
+        "value": 133862.40000000002,
+        "last_ordered": "2026-04-22"
+      }
+    ],
+    "inquiry_count": 0,
+    "inquiry_to_order_rate": 0.0,
+    "products_inquired_not_ordered": []
+  },
+  "filtered_news": []
+}

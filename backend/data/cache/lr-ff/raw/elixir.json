@@ -1,0 +1,55 @@
+{
+  "customer_id": "lr-ff",
+  "pulled_at": "2026-04-27T11:47:25.287704Z",
+  "orders": [
+    {
+      "order_id": "E87-26",
+      "date": "2026-04-22",
+      "products": [
+        {
+          "name": "Diethyl Phthalate (DEP)",
+          "grade": "Fragrance Grade",
+          "qty": 26880.0,
+          "unit": "KG",
+          "value": 44620.8
+        }
+      ],
+      "total_value": 44620.8,
+      "currency": "EUR",
+      "status": "submitted"
+    },
+    {
+      "order_id": "E86-26",
+      "date": "2026-04-22",
+      "products": [
+        {
+          "name": "Diethyl Phthalate (DEP)",
+          "grade": "Fragrance Grade",
+          "qty": 26880.0,
+          "unit": "KG",
+          "value": 44620.8
+        }
+      ],
+      "total_value": 44620.8,
+      "currency": "EUR",
+      "status": "submitted"
+    },
+    {
+      "order_id": "E85-26",
+      "date": "2026-04-22",
+      "products": [
+        {
+          "name": "Diethyl Phthalate (DEP)",
+          "grade": "Fragrance Grade",
+          "qty": 26880.0,
+          "unit": "KG",
+          "value": 44620.8
+        }
+      ],
+      "total_value": 44620.8,
+      "currency": "EUR",
+      "status": "submitted"
+    }
+  ],
+  "inquiries": []
+}

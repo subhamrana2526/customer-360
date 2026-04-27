@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stage 1 Output — Elchemy</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" href="/static/stage1.css" />
+</head>
+<body>
+  <header>
+    <a id="back-link" class="back" href="#">&larr; Back to brief</a>
+    <h1 id="company-name">Loading…</h1>
+    <div class="meta">Stage 1 — Pre-digested intelligence (orders, threads, news)</div>
+  </header>
+  <main class="s1-main">
+    <div id="generated-at" class="s1-generated"></div>
+    <section id="orders-section" class="s1-section">
+      <h2 class="s1-section-title">Orders &amp; Inquiries</h2>
+      <div id="orders-content">Loading…</div>
+    </section>
+    <section id="threads-section" class="s1-section">
+      <h2 class="s1-section-title">Email Threads</h2>
+      <div id="threads-content">Loading…</div>
+    </section>
+    <section id="news-section" class="s1-section">
+      <h2 class="s1-section-title">Relevant News</h2>
+      <div id="news-content">Loading…</div>
+    </section>
+  </main>
+  <script src="/static/stage1.js"></script>
+  <script>renderStage1Page();</script>
+</body>
+</html>

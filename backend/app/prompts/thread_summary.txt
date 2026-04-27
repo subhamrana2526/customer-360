@@ -1,0 +1,22 @@
+You are processing an email thread between Elchemy (a specialty chemicals
+distributor) and a customer. Your output will be used to prep a sales rep
+for an upcoming call.
+
+Extract the following from the thread below. Return ONLY valid JSON
+matching this exact schema:
+
+{
+  "summary": "<2-3 sentences: what was discussed, what was decided>",
+  "open_items": ["<commitment or pending action, one per item>"],
+  "sentiment": "<one of: positive, neutral, cooling, cold>",
+  "key_products_discussed": ["<product or chemical names mentioned>"]
+}
+
+Rules:
+- Be specific. Reference actual products, prices, dates if mentioned.
+- "open_items" includes promises from EITHER side that are not yet closed.
+- "sentiment" reflects the most recent message tone, not the average.
+- If thread is short (1-2 messages), still return the schema.
+
+THREAD:
+{thread_emails}
