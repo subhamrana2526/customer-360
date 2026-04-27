@@ -34,6 +34,7 @@ def signal_for_product(product_id: str, window_days: int = 90) -> dict:
         "window_days": result["window_days"],
         "end_date": result["end_date"],
         "top_drivers": result["factor_contributions"][:3],
+        "factors": result["factor_contributions"],
         "summary_line": _summary_line(product["name"], result),
     }
 

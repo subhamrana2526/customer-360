@@ -2,7 +2,7 @@
   "benzyl_alcohol": [
     {
       "factor_id": "toluene",
-      "weight_pct": 80.0,
+      "weight_pct": 83.0,
       "notes": "Primary feedstock"
     },
     {
@@ -19,6 +19,11 @@
       "factor_id": "lpg",
       "weight_pct": 5.0,
       "notes": "Energy proxy"
+    },
+    {
+      "factor_id": "fuel_oil",
+      "weight_pct": 0.0,
+      "notes": ""
     }
   ],
   "benzaldehyde": [

@@ -16,19 +16,21 @@ function deltaBadge(pct) {
 /* ─── Dashboard ─────────────────────────────────────────── */
 
 function signalCard(sig) {
-  const dir = sig.direction || 'flat';
-  const top = sig.top_drivers?.[0] || null;
-  const topLine = top ? `${top.factor_name} ${fmtPct(top.pct_change)}` : 'No driver data';
+  const factors = sig.factors || sig.top_drivers || [];
+  const factorRows = factors.map(f => {
+    const pct = f.pct_change;
+    const cls = pct > 0.005 ? 'delta-up' : pct < -0.005 ? 'delta-dn' : 'delta-flat';
+    return `<div class="mi-factor-row">
+      <span class="mi-factor-name">${f.factor_name}</span>
+      <span class="mi-factor-delta ${cls}">${fmtPct(pct)}</span>
+    </div>`;
+  }).join('');
   return `
-    <a class="mi-card mi-card-${dir}" href="/mi/products/${sig.product_id}">
+    <a class="mi-card" href="/mi/products/${sig.product_id}">
       <div class="mi-card-header">
         <h3>${sig.product_name}</h3>
-        <span class="mi-arrow">${ARROW[dir]}</span>
       </div>
-      <div class="mi-pct">${fmtPct(sig.pct_change)}</div>
-      <div class="mi-window">over ${sig.window_days}d</div>
-      <div class="mi-driver">Top driver: <strong>${topLine}</strong></div>
-      <div class="mi-summary">${sig.summary_line || ''}</div>
+      <div class="mi-factors">${factorRows || '<span class="muted">No factor data</span>'}</div>
     </a>`;
 }
 
