@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MI Product — Elchemy</title>
+  <link rel="stylesheet" href="/static/style.css?v=2" />
+  <link rel="stylesheet" href="/static/mi/mi.css?v=2" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <a href="/mi" class="back">&larr; All products</a>
+    <h1 id="product-name">Loading…</h1>
+    <div id="product-meta" class="meta"></div>
+  </header>
+  <main>
+    <section id="signal-card" class="signal-card empty">Loading signal…</section>
+
+    <section class="mi-panel">
+      <h2 class="mi-section-title">Recipe — cost structure</h2>
+      <table class="recipe-table">
+        <thead>
+          <tr><th>Factor</th><th>Category</th><th>Weight %</th><th>Notes</th></tr>
+        </thead>
+        <tbody id="recipe-body"><tr><td colspan="4" class="empty">Loading…</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="mi-panel">
+      <h2 class="mi-section-title">Factor price history (60 days)</h2>
+      <div id="factor-charts" class="factor-grid"></div>
+    </section>
+  </main>
+  <script src="/static/mi/mi.js?v=2"></script>
+  <script>renderMIProductDetail();</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "toluene_cn",
+    "name": "Toluene (China)",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-177.html",
+    "sunsirs_id": 177,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "naoh_cn",
+    "name": "Caustic Soda (China)",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prolist-1.html",
+    "sunsirs_id": null,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "chlorine_cn",
+    "name": "Chlorine (China)",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prolist-1.html",
+    "sunsirs_id": null,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "lpg_cn",
+    "name": "LPG (China)",
+    "category": "energy",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-158.html",
+    "sunsirs_id": 158,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "fx_usd_inr",
+    "name": "USD/INR",
+    "category": "fx",
+    "source": "rbi",
+    "source_url": "https://www.rbi.org.in/Scripts/ReferenceRateArchive.aspx",
+    "sunsirs_id": null,
+    "unit": "INR per USD"
+  },
+  {
+    "id": "fx_usd_cny",
+    "name": "USD/CNY",
+    "category": "fx",
+    "source": "rbi",
+    "source_url": "https://www.rbi.org.in/Scripts/ReferenceRateArchive.aspx",
+    "sunsirs_id": null,
+    "unit": "CNY per USD"
+  },
+  {
+    "id": "freight_in_us_east",
+    "name": "Freight India → US East",
+    "category": "freight",
+    "source": "internal",
+    "source_url": null,
+    "sunsirs_id": null,
+    "unit": "USD/container"
+  }
+]

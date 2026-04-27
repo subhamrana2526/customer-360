@@ -1,0 +1,32 @@
+[
+  {
+    "id": "benzyl_alcohol",
+    "name": "Benzyl Alcohol",
+    "family": "toluene_derivative",
+    "description": "Aromatic alcohol used in fragrances, cosmetics, and as a solvent."
+  },
+  {
+    "id": "benzaldehyde",
+    "name": "Benzaldehyde",
+    "family": "toluene_derivative",
+    "description": "Almond-scented aldehyde used in flavors, fragrances, and dyes."
+  },
+  {
+    "id": "benzyl_chloride",
+    "name": "Benzyl Chloride",
+    "family": "toluene_derivative",
+    "description": "Reactive intermediate for benzyl compounds and quaternary ammonium salts."
+  },
+  {
+    "id": "benzoic_acid",
+    "name": "Benzoic Acid",
+    "family": "toluene_derivative",
+    "description": "Preservative and precursor to benzoate plasticizers."
+  },
+  {
+    "id": "tdi",
+    "name": "Toluene Diisocyanate",
+    "family": "toluene_derivative",
+    "description": "Key feedstock for flexible polyurethane foams."
+  }
+]

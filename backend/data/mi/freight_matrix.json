@@ -1,0 +1,14 @@
+{
+  "freight_in_us_east": [
+    {"month": "2026-01", "price_usd_per_container": 2400},
+    {"month": "2026-02", "price_usd_per_container": 2350},
+    {"month": "2026-03", "price_usd_per_container": 2480},
+    {"month": "2026-04", "price_usd_per_container": 2620}
+  ],
+  "freight_in_us_west": [
+    {"month": "2026-01", "price_usd_per_container": 2700},
+    {"month": "2026-02", "price_usd_per_container": 2650},
+    {"month": "2026-03", "price_usd_per_container": 2780},
+    {"month": "2026-04", "price_usd_per_container": 2900}
+  ]
+}

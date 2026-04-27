@@ -1,0 +1,36 @@
+{
+  "benzyl_alcohol": [
+    {"factor_id": "toluene_cn",   "weight_pct": 80, "notes": "Primary feedstock"},
+    {"factor_id": "naoh_cn",      "weight_pct": 6,  "notes": "Reagent"},
+    {"factor_id": "chlorine_cn",  "weight_pct": 6,  "notes": "Reagent"},
+    {"factor_id": "lpg_cn",       "weight_pct": 5,  "notes": "Energy proxy"},
+    {"factor_id": "fx_usd_cny",   "weight_pct": 3,  "notes": "FX exposure"}
+  ],
+  "benzaldehyde": [
+    {"factor_id": "toluene_cn",   "weight_pct": 78, "notes": "Primary feedstock"},
+    {"factor_id": "chlorine_cn",  "weight_pct": 8,  "notes": "Oxidation reagent"},
+    {"factor_id": "naoh_cn",      "weight_pct": 5,  "notes": "Neutralization"},
+    {"factor_id": "lpg_cn",       "weight_pct": 6,  "notes": "Energy proxy"},
+    {"factor_id": "fx_usd_cny",   "weight_pct": 3,  "notes": "FX exposure"}
+  ],
+  "benzyl_chloride": [
+    {"factor_id": "toluene_cn",   "weight_pct": 75, "notes": "Primary feedstock"},
+    {"factor_id": "chlorine_cn",  "weight_pct": 15, "notes": "Chlorination reagent"},
+    {"factor_id": "lpg_cn",       "weight_pct": 5,  "notes": "Energy proxy"},
+    {"factor_id": "fx_usd_cny",   "weight_pct": 5,  "notes": "FX exposure"}
+  ],
+  "benzoic_acid": [
+    {"factor_id": "toluene_cn",   "weight_pct": 72, "notes": "Primary feedstock"},
+    {"factor_id": "naoh_cn",      "weight_pct": 8,  "notes": "Neutralization"},
+    {"factor_id": "lpg_cn",       "weight_pct": 8,  "notes": "Energy proxy"},
+    {"factor_id": "fx_usd_cny",   "weight_pct": 7,  "notes": "FX exposure"},
+    {"factor_id": "freight_in_us_east", "weight_pct": 5, "notes": "Export logistics"}
+  ],
+  "tdi": [
+    {"factor_id": "toluene_cn",   "weight_pct": 65, "notes": "Primary feedstock"},
+    {"factor_id": "chlorine_cn",  "weight_pct": 12, "notes": "Phosgene precursor"},
+    {"factor_id": "lpg_cn",       "weight_pct": 10, "notes": "Energy proxy"},
+    {"factor_id": "fx_usd_cny",   "weight_pct": 8,  "notes": "FX exposure"},
+    {"factor_id": "freight_in_us_east", "weight_pct": 5, "notes": "Export logistics"}
+  ]
+}

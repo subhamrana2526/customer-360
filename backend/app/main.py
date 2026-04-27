@@ -17,6 +17,7 @@ from app.config import (
 from app.connectors import elixir as elixir_conn
 from app.connectors import hubspot as hubspot_conn
 from app.connectors import news as news_conn
+from app.mi.routes import router as mi_router
 from app.models import Customer, ElixirRaw, HubSpotRaw, NewsRaw, PrepBrief, Stage1Output
 from app.stage1.news_filter import filter_news
 from app.stage1.orders import aggregate
@@ -24,6 +25,7 @@ from app.stage1.threads import summarize_threads
 from app.stage2.synthesize import synthesize
 
 app = FastAPI(title="Elchemy Customer 360")
+app.include_router(mi_router)
 
 
 def _load_customers() -> list[Customer]:
@@ -136,6 +138,16 @@ def customer_page(customer_id: str):
 @app.get("/customers/{customer_id}/stage1")
 def stage1_page(customer_id: str):
     return FileResponse(STATIC_DIR / "stage1.html")
+
+
+@app.get("/mi")
+def mi_index_page():
+    return FileResponse(STATIC_DIR / "mi" / "index.html")
+
+
+@app.get("/mi/products/{product_id}")
+def mi_product_page(product_id: str):
+    return FileResponse(STATIC_DIR / "mi" / "product.html")
 
 
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
