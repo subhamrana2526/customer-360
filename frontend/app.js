@@ -5,6 +5,7 @@ const api = {
   raw: id => fetch(`/api/customers/${id}/raw`).then(r => r.ok ? r.json() : {}),
   stage1: id => fetch(`/api/customers/${id}/stage1`).then(r => r.ok ? r.json() : null),
   refresh: id => fetch(`/api/customers/${id}/refresh`, { method: 'POST' }).then(r => r.json()),
+  miProducts: () => fetch('/api/mi/products').then(r => r.ok ? r.json() : []),
   addCustomer: (body) => fetch('/api/customers', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -78,18 +79,89 @@ function _briefCard({ title, span = 1, body }) {
     </article>`;
 }
 
-function renderBrief(brief) {
+// Normalize a product name for fuzzy matching against MI catalogue.
+function _normalizeProductName(name) {
+  return (name || '')
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, '')   // strip parenthetical (e.g. "(DEP)", "(Almond Aldehyde)")
+    .replace(/[^a-z0-9 ]+/g, ' ') // strip punctuation
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Try to map a customer-facing product name to an MI product id.
+// Returns the matching MI product, or null.
+function _matchMIProduct(productName, miProducts) {
+  if (!productName || !miProducts?.length) return null;
+  const norm = _normalizeProductName(productName);
+  if (!norm) return null;
+  // Exact match on normalized MI product name first
+  for (const mi of miProducts) {
+    if (_normalizeProductName(mi.product_name) === norm) return mi;
+  }
+  // Substring match (MI product name appears inside the customer name)
+  for (const mi of miProducts) {
+    const miNorm = _normalizeProductName(mi.product_name);
+    if (miNorm && norm.includes(miNorm)) return mi;
+  }
+  return null;
+}
+
+function _miLink(mi, productName) {
+  if (mi) {
+    return `<a class="mi-jump" href="/mi/products/${mi.product_id}">View Market Intelligence &rarr;</a>`;
+  }
+  // No MI match — link to the empty-state builder so the user can configure
+  // a recipe for this product on the fly.
+  const q = encodeURIComponent(productName || '');
+  return `<a class="mi-jump mi-jump-empty" href="/mi/products/new?name=${q}">View Market Intelligence &rarr;</a>`;
+}
+
+function _relatedProductsBody(brief, miProducts) {
+  const angles = brief.pitch_angles || [];
+  if (!angles.length) return '<p class="brief-empty-text">No related products surfaced.</p>';
+  return `<ul class="pitch-list">${angles.map(p => {
+    const mi = _matchMIProduct(p.product_name, miProducts);
+    return `
+      <li>
+        <div class="pitch-product">${p.product_name}</div>
+        <div class="pitch-rationale">${p.rationale}</div>
+        ${_miLink(mi, p.product_name)}
+      </li>`;
+  }).join('')}</ul>`;
+}
+
+function _openInquiriesBody(rawHubspot, miProducts) {
+  const inquiries = (rawHubspot?.inquired_products || []).filter(i => i.is_open_deal);
+  if (!inquiries.length) return '<p class="brief-empty-text">No open inquiries on file.</p>';
+  // De-dupe by product name (HubSpot can list the same product across multiple deals)
+  const seen = new Set();
+  const unique = inquiries.filter(i => {
+    const key = (i.name || '').toLowerCase().trim();
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+  return `<ul class="inquiry-list">${unique.map(i => {
+    const mi = _matchMIProduct(i.name, miProducts);
+    return `
+      <li>
+        <div class="inquiry-product">${i.name}</div>
+        <div class="inquiry-meta">
+          ${i.deal_name ? `<span class="inquiry-deal">${i.deal_name}</span>` : ''}
+          ${i.quantity ? `<span class="inquiry-qty">Qty: ${i.quantity}</span>` : ''}
+          ${i.deal_date ? `<span class="inquiry-date">${i.deal_date}</span>` : ''}
+        </div>
+        ${_miLink(mi, i.name)}
+      </li>`;
+  }).join('')}</ul>`;
+}
+
+function renderBrief(brief, opts = {}) {
   if (!brief) {
     return '<div class="brief-empty">No brief yet. Click <strong>Refresh Brief</strong> to generate.</div>';
   }
-
-  const angles = (brief.pitch_angles || []).length
-    ? `<ul class="pitch-list">${brief.pitch_angles.map(p => `
-        <li>
-          <div class="pitch-product">${p.product_name}</div>
-          <div class="pitch-rationale">${p.rationale}</div>
-        </li>`).join('')}</ul>`
-    : '<p class="brief-empty-text">No pitch angles surfaced.</p>';
+  const { miProducts = [], rawHubspot = null } = opts;
 
   const starters = (brief.conversation_starters || []).length
     ? `<ul class="starter-list">${brief.conversation_starters.map(s => `<li>${s}</li>`).join('')}</ul>`
@@ -100,7 +172,8 @@ function renderBrief(brief) {
     _briefCard({ title: 'Customer snapshot',     span: 1, body: `<p>${brief.customer_snapshot || '—'}</p>` }),
     _briefCard({ title: "What's new",            span: 1, body: `<p>${brief.whats_new || '—'}</p>` }),
     _briefCard({ title: 'Market context',        span: 2, body: `<p>${brief.market_context || '—'}</p>` }),
-    _briefCard({ title: 'Pitch angles',          span: 2, body: angles }),
+    _briefCard({ title: 'Related products',      span: 1, body: _relatedProductsBody(brief, miProducts) }),
+    _briefCard({ title: 'Open inquiries',        span: 1, body: _openInquiriesBody(rawHubspot, miProducts) }),
     _briefCard({ title: 'Conversation starters', span: 2, body: starters }),
   ].join('');
 }
@@ -172,14 +245,18 @@ async function renderCustomerDetail() {
     detailLink.rel = 'noopener';
   }
 
-  const [brief, raw, stage1] = await Promise.all([
+  const [brief, raw, stage1, miProducts] = await Promise.all([
     api.brief(id),
     api.raw(id),
     api.stage1(id),
+    api.miProducts(),
   ]);
 
   renderStatsStrip(stage1, raw);
-  document.getElementById('brief').innerHTML = renderBrief(brief);
+  document.getElementById('brief').innerHTML = renderBrief(brief, {
+    miProducts,
+    rawHubspot: raw.hubspot,
+  });
   document.getElementById('raw-hubspot').textContent = JSON.stringify(raw.hubspot || {}, null, 2);
   document.getElementById('raw-elixir').textContent = JSON.stringify(raw.elixir || {}, null, 2);
   document.getElementById('raw-news').textContent = JSON.stringify(raw.news || {}, null, 2);
@@ -190,9 +267,15 @@ async function renderCustomerDetail() {
     btn.textContent = 'Refreshing…';
     try {
       const fresh = await api.refresh(id);
-      document.getElementById('brief').innerHTML = renderBrief(fresh);
-      // Re-pull stage1 + raw to refresh stats
-      const [s1New, rawNew] = await Promise.all([api.stage1(id), api.raw(id)]);
+      const [s1New, rawNew, miNew] = await Promise.all([
+        api.stage1(id),
+        api.raw(id),
+        api.miProducts(),
+      ]);
+      document.getElementById('brief').innerHTML = renderBrief(fresh, {
+        miProducts: miNew,
+        rawHubspot: rawNew.hubspot,
+      });
       renderStatsStrip(s1New, rawNew);
     } catch (e) {
       alert('Refresh failed: ' + e);

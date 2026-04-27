@@ -28,5 +28,29 @@
     "name": "Toluene Diisocyanate",
     "family": "toluene_derivative",
     "description": "Key feedstock for flexible polyurethane foams."
+  },
+  {
+    "id": "benzyl_acitate",
+    "name": "benzyl acitate",
+    "family": "custom",
+    "description": null
+  },
+  {
+    "id": "xyz",
+    "name": "xyz",
+    "family": "custom",
+    "description": null
+  },
+  {
+    "id": "jfyg",
+    "name": "jfyg",
+    "family": "custom",
+    "description": null
+  },
+  {
+    "id": "corn_starch",
+    "name": "Corn Starch",
+    "family": "custom",
+    "description": null
   }
 ]

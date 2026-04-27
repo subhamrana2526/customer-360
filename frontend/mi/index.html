@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Market Intelligence — Elchemy</title>
-  <link rel="stylesheet" href="/static/style.css?v=7" />
-  <link rel="stylesheet" href="/static/mi/mi.css?v=7" />
+  <link rel="stylesheet" href="/static/style.css?v=9" />
+  <link rel="stylesheet" href="/static/mi/mi.css?v=9" />
 </head>
 <body>
   <header class="app-header">
@@ -23,13 +23,34 @@
         <h2 class="page-title">Products</h2>
         <p class="page-sub">Input factor price trends (last 90 days)</p>
       </div>
-      <button id="mi-refresh" class="mi-refresh">Refresh signals</button>
+      <div class="toolbar-actions">
+        <button id="mi-add-product" class="mi-add-product">+ Add Product</button>
+        <button id="mi-refresh" class="mi-refresh">Refresh signals</button>
+      </div>
     </div>
     <div id="mi-dashboard" class="mi-grid">
       <p class="empty">Loading signals…</p>
     </div>
   </main>
-  <script src="/static/mi/mi.js?v=7"></script>
+
+  <!-- Add Product modal -->
+  <div id="mi-add-modal" class="modal-backdrop">
+    <div class="modal">
+      <h2 class="modal-title">Add Product</h2>
+      <p class="modal-sub">Give the product a name. You'll add input factors and weights on the next screen.</p>
+      <form id="mi-add-form">
+        <label class="field-label">Product Name <span class="req">*</span></label>
+        <input id="mi-add-name" class="field-input" type="text"
+               placeholder="e.g. Synthetic Vanillin" required autocomplete="off" />
+        <p id="mi-add-error" class="ac-error"></p>
+        <div class="modal-actions">
+          <button type="button" id="mi-add-cancel" class="btn-secondary">Cancel</button>
+          <button type="submit" class="btn-primary">Continue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/static/mi/mi.js?v=9"></script>
   <script>renderMIDashboard();</script>
 </body>
 </html>

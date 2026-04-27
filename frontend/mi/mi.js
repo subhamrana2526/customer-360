@@ -54,6 +54,45 @@ async function renderMIDashboard() {
     catch (e) { alert('Refresh failed: ' + e.message); }
     finally { btn.disabled = false; btn.textContent = 'Refresh signals'; }
   });
+
+  wireAddProductModal();
+}
+
+/* ─── Add Product modal (dashboard) ──────────────────────── */
+
+function wireAddProductModal() {
+  const modal  = document.getElementById('mi-add-modal');
+  const openBtn = document.getElementById('mi-add-product');
+  const cancel = document.getElementById('mi-add-cancel');
+  const form   = document.getElementById('mi-add-form');
+  const input  = document.getElementById('mi-add-name');
+  const errEl  = document.getElementById('mi-add-error');
+  if (!modal || !openBtn || !form) return;
+
+  const close = () => {
+    modal.classList.remove('open');
+    form.reset();
+    errEl.textContent = '';
+  };
+
+  openBtn.addEventListener('click', () => {
+    modal.classList.add('open');
+    setTimeout(() => input.focus(), 50);
+  });
+  cancel.addEventListener('click', close);
+  modal.addEventListener('click', e => { if (e.target.id === 'mi-add-modal') close(); });
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = (input.value || '').trim();
+    if (!name) {
+      errEl.textContent = 'Product name is required';
+      return;
+    }
+    // Send the user to the empty-state builder; the first factor add will
+    // promote the product into the catalogue (existing flow).
+    location.href = `/mi/products/new?name=${encodeURIComponent(name)}`;
+  });
 }
 
 /* ─── Product detail state ───────────────────────────────── */
@@ -63,6 +102,8 @@ let _allSeries = {};   // factor_id → [{date, price}]
 let _allFactors= [];   // full factor catalogue from /api/mi/factors
 let _charts    = {};   // factor_id → Chart instance
 let _productId = '';
+let _isEmpty   = false;  // true when on /mi/products/new (preview mode, no persist)
+let _emptyName = '';     // ?name=... query param for the preview product
 let _saveTimer = null;
 let _saveStatusEl = null;
 
@@ -75,6 +116,17 @@ function setSaveStatus(text, kind = 'idle') {
 
 async function persistRecipe(immediate = false) {
   clearTimeout(_saveTimer);
+  if (_isEmpty) {
+    // First save: no backing product yet. As soon as there is at least one
+    // factor in the recipe, promote this preview into a real catalogue entry.
+    if (_recipe.length > 0) {
+      await promoteToCatalogue();
+      return;
+    }
+    updateSignalBanner(computeLocalSignal());
+    setSaveStatus('Preview only', 'idle');
+    return;
+  }
   const doSave = async () => {
     setSaveStatus('Saving…', 'saving');
     try {
@@ -102,6 +154,87 @@ async function persistRecipe(immediate = false) {
   };
   if (immediate) return doSave();
   _saveTimer = setTimeout(doSave, 500);
+}
+
+/**
+ * Promote a preview product into the catalogue. Called the first time the user
+ * adds a factor while in `_isEmpty` mode. After this call, the page exits
+ * preview mode and behaves like any other catalogue product.
+ */
+async function promoteToCatalogue() {
+  setSaveStatus('Saving to catalogue…', 'saving');
+  try {
+    const res = await fetch('/api/mi/products', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: _emptyName,
+        family: 'custom',
+        recipe: _recipe.map(r => ({
+          factor_id: r.factor_id,
+          weight_pct: r.weight_pct,
+          notes: r.notes || '',
+        })),
+      }),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+
+    // Transition out of preview mode
+    _productId = data.product_id;
+    _isEmpty   = false;
+    _emptyName = '';
+
+    // Update URL without reload so refreshing reopens the saved product
+    history.replaceState(null, '', `/mi/products/${data.product_id}`);
+
+    // Refresh the meta line (drop the "Preview mode" badge)
+    const product = data.product || {};
+    const metaEl = document.getElementById('product-meta');
+    if (metaEl) metaEl.innerHTML = product.description || '';
+
+    updateSignalBanner(product.signal || {});
+    setSaveStatus('Saved to catalogue', 'ok');
+    setTimeout(() => setSaveStatus(''), 1800);
+  } catch (e) {
+    setSaveStatus('Save failed', 'err');
+  }
+}
+
+/**
+ * Compute a directional signal locally from the in-memory _recipe + _allSeries.
+ * Used in preview mode where there's no server-side product to PUT against.
+ * Mirrors backend `evaluate_additive` — additive weighted sum of pct changes
+ * over the latest 90 days available in each factor's series.
+ */
+function computeLocalSignal() {
+  const product_name = _emptyName || _productId;
+  if (!_recipe.length) {
+    return { product_name, direction: 'flat', pct_change: 0, window_days: 90,
+      summary_line: 'Add factors to see a directional signal.' };
+  }
+  let predicted = 0;
+  let topFactor = null, topAbs = -1, topPct = 0;
+  let withData = 0;
+  for (const r of _recipe) {
+    const delta = computeDelta(_allSeries[r.factor_id] || []);
+    if (delta == null) continue;
+    withData++;
+    const coef = (r.weight_pct || 0) / 100;
+    const weighted = coef * delta;
+    predicted += weighted;
+    if (Math.abs(weighted) > topAbs) {
+      topAbs = Math.abs(weighted);
+      topFactor = r.factor_name;
+      topPct = delta;
+    }
+  }
+  let direction = 'flat';
+  if (Math.abs(predicted) >= 0.01) direction = predicted > 0 ? 'up' : 'down';
+  const summary = topFactor
+    ? `${topFactor} ${topPct > 0 ? 'up' : 'down'} ${Math.abs(topPct * 100).toFixed(1)}% drove ${product_name} estimate ${direction === 'flat' ? 'flat' : direction} ${Math.abs(predicted * 100).toFixed(1)}%`
+    : 'No factor data available for the selected recipe.';
+  return { product_name, direction, pct_change: predicted, window_days: 90, summary_line: summary };
 }
 
 function updateSignalBanner(sig) {
@@ -175,6 +308,15 @@ function renderCharts() {
   Object.values(_charts).forEach(c => c?.destroy());
   _charts = {};
 
+  if (!_recipe.length) {
+    el.innerHTML = `
+      <div class="charts-empty">
+        <p><strong>No factors selected yet.</strong></p>
+        <p class="muted">Add input factors below to see their 90-day price history and compute a directional signal for this product.</p>
+      </div>`;
+    return;
+  }
+
   el.innerHTML = _recipe.map(r => {
     const series = _allSeries[r.factor_id] || [];
     const delta  = computeDelta(series);
@@ -209,7 +351,10 @@ function renderCharts() {
 function renderRecipeTable() {
   const tbody = document.getElementById('recipe-body');
   if (!_recipe.length) {
-    tbody.innerHTML = '<tr><td colspan="6" class="empty">No factors in recipe.</td></tr>';
+    const hint = _isEmpty
+      ? 'No recipe yet. Use <strong>+ Add factor…</strong> above to build a cost structure for this product and view its directional signal.'
+      : 'No factors in recipe.';
+    tbody.innerHTML = `<tr><td colspan="6" class="empty recipe-empty">${hint}</td></tr>`;
     return;
   }
   tbody.innerHTML = _recipe.map((r, i) => {
@@ -289,26 +434,42 @@ function refreshAddDropdown() {
 
 async function renderMIProductDetail() {
   _productId = location.pathname.split('/').pop();
+  _isEmpty   = _productId === 'new';
+  _emptyName = _isEmpty ? (new URLSearchParams(location.search).get('name') || 'Custom product') : '';
+
   const nameEl = document.getElementById('product-name');
   const metaEl = document.getElementById('product-meta');
   const sigEl  = document.getElementById('signal-card');
 
   try {
-    const [product, factorsResp, allFactors] = await Promise.all([
-      fetch(`/api/mi/products/${_productId}`).then(r => r.json()),
-      fetch(`/api/mi/products/${_productId}/factors`).then(r => r.json()),
-      fetch('/api/mi/factors').then(r => r.json()),
-    ]);
+    let product = null, factorsResp = { factors: [] };
+    let allFactors = [];
 
-    nameEl.textContent = product.name;
-    metaEl.textContent = product.description || '';
+    if (_isEmpty) {
+      // Empty-state: skip the product fetch (would 404), just load factor catalogue
+      allFactors = await fetch('/api/mi/factors').then(r => r.json());
+    } else {
+      [product, factorsResp, allFactors] = await Promise.all([
+        fetch(`/api/mi/products/${_productId}`).then(r => r.json()),
+        fetch(`/api/mi/products/${_productId}/factors`).then(r => r.json()),
+        fetch('/api/mi/factors').then(r => r.json()),
+      ]);
+    }
+
+    if (_isEmpty) {
+      nameEl.textContent = _emptyName;
+      metaEl.innerHTML = '<span class="preview-badge">Preview mode &middot; not yet in catalogue</span>';
+    } else {
+      nameEl.textContent = product.name;
+      metaEl.textContent = product.description || '';
+    }
     _allFactors = allFactors;
 
-    // Seed series cache from product factors response
+    // Seed series cache from product factors response (none in empty mode)
     (factorsResp.factors || []).forEach(f => { _allSeries[f.factor_id] = f.series || []; });
 
     // Build recipe with delta pre-computed
-    _recipe = (product.recipe || []).map(r => ({
+    _recipe = ((product && product.recipe) || []).map(r => ({
       factor_id:   r.factor_id,
       factor_name: r.factor_name,
       category:    r.category,
@@ -318,7 +479,7 @@ async function renderMIProductDetail() {
     }));
 
     // Signal banner
-    const sig = product.signal || {};
+    const sig = _isEmpty ? computeLocalSignal() : (product.signal || {});
     const dir = sig.direction || 'flat';
     sigEl.classList.remove('empty');
     sigEl.classList.add(`signal-${dir}`);

@@ -3,6 +3,8 @@
 Self-contained: only imports from app.mi.* and app.config. Does not depend on
 Customer 360 connectors / stages / models.
 """
+import re
+
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
@@ -17,6 +19,29 @@ class RecipeItem(BaseModel):
 
 class UpdateRecipeRequest(BaseModel):
     recipe: list[RecipeItem]
+
+
+class CreateProductRequest(BaseModel):
+    name: str
+    family: str | None = "custom"
+    description: str | None = None
+    recipe: list[RecipeItem] = []
+
+
+def _slugify(name: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
+    return slug or "product"
+
+
+def _unique_product_id(name: str) -> str:
+    base = _slugify(name)
+    existing = {p["id"] for p in store.load_products()}
+    if base not in existing:
+        return base
+    i = 2
+    while f"{base}_{i}" in existing:
+        i += 1
+    return f"{base}_{i}"
 
 router = APIRouter(prefix="/api/mi", tags=["market-intelligence"])
 
@@ -36,6 +61,35 @@ def list_all_factors():
 def list_products():
     """Products with their latest 30-day signal."""
     return signals.all_signals()
+
+
+@router.post("/products")
+def create_product(req: CreateProductRequest):
+    """Create a new product + initial recipe. Used by the empty-state UI when a
+    sales rep adds factors for a product not yet in the catalogue."""
+    if not req.name.strip():
+        raise HTTPException(400, "Product name is required")
+    for item in req.recipe:
+        if not store.get_factor(item.factor_id):
+            raise HTTPException(400, f"Unknown factor: {item.factor_id}")
+
+    product_id = _unique_product_id(req.name)
+    product = {
+        "id": product_id,
+        "name": req.name.strip(),
+        "family": req.family or "custom",
+        "description": req.description,
+    }
+    store.save_product(product)
+    store.save_recipe(product_id, [item.model_dump() for item in req.recipe])
+
+    return {
+        "status": "ok",
+        "product_id": product_id,
+        "product": {**product,
+                    "recipe": [r.model_dump() for r in req.recipe],
+                    "signal": signals.signal_for_product(product_id)},
+    }
 
 
 @router.get("/products/{product_id}")
