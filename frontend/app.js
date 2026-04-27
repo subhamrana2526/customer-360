@@ -5,6 +5,11 @@ const api = {
   raw: id => fetch(`/api/customers/${id}/raw`).then(r => r.ok ? r.json() : {}),
   stage1: id => fetch(`/api/customers/${id}/stage1`).then(r => r.ok ? r.json() : null),
   refresh: id => fetch(`/api/customers/${id}/refresh`, { method: 'POST' }).then(r => r.json()),
+  addCustomer: (body) => fetch('/api/customers', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  }).then(r => r.ok ? r.json() : r.json().then(e => Promise.reject(e.detail || 'Failed'))),
 };
 
 function customerIdFromPath() {
@@ -21,7 +26,46 @@ async function renderCustomerList() {
       <p class="industry">${c.industry}</p>
       <p class="geography">${c.geography} &middot; ${c.segment}</p>
     </a>
-  `).join('') || '<p>No customers seeded. Edit data/customers.json.</p>';
+  `).join('') || '<p>No customers yet.</p>';
+
+  document.getElementById('add-customer-btn').onclick = () => {
+    document.getElementById('add-customer-modal').classList.add('open');
+    document.getElementById('ac-company').focus();
+  };
+  document.getElementById('ac-cancel').onclick = _closeModal;
+  document.getElementById('add-customer-modal').onclick = (e) => {
+    if (e.target.id === 'add-customer-modal') _closeModal();
+  };
+  document.getElementById('add-customer-form').onsubmit = async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('ac-submit');
+    const err = document.getElementById('ac-error');
+    const status = document.getElementById('ac-status');
+    btn.disabled = true;
+    err.textContent = '';
+    status.textContent = 'Inferring profile and running pipeline… this takes ~30s';
+    try {
+      const result = await api.addCustomer({
+        company_name: document.getElementById('ac-company').value.trim(),
+        hubspot_company_id: document.getElementById('ac-hubspot').value.trim(),
+        elixir_customer_id: document.getElementById('ac-elixir').value.trim(),
+      });
+      _closeModal();
+      window.location.href = `/customers/${result.customer_id}`;
+    } catch (e) {
+      err.textContent = typeof e === 'string' ? e : 'Something went wrong. Try again.';
+      status.textContent = '';
+      btn.disabled = false;
+    }
+  };
+}
+
+function _closeModal() {
+  document.getElementById('add-customer-modal').classList.remove('open');
+  document.getElementById('add-customer-form').reset();
+  document.getElementById('ac-error').textContent = '';
+  document.getElementById('ac-status').textContent = '';
+  document.getElementById('ac-submit').disabled = false;
 }
 
 function renderBrief(brief) {

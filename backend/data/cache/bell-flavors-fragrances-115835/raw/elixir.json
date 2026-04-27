@@ -1,0 +1,23 @@
+{
+  "customer_id": "bell-flavors-fragrances-115835",
+  "pulled_at": "2026-04-27T18:31:28.050559Z",
+  "orders": [
+    {
+      "order_id": "E69-26",
+      "date": "2026-04-09",
+      "products": [
+        {
+          "name": "Benzyl Benzoate",
+          "grade": "Fragrance Grade",
+          "qty": 6000.0,
+          "unit": "KG",
+          "value": 21420.0
+        }
+      ],
+      "total_value": 21420.0,
+      "currency": "USD",
+      "status": "submitted"
+    }
+  ],
+  "inquiries": []
+}

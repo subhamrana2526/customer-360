@@ -1,0 +1,40 @@
+{
+  "customer_id": "bell-flavors-fragrances-3be4bf",
+  "company_name": "Bell Flavors & Fragrances",
+  "generated_at": "2026-04-27T18:28:05.242129Z",
+  "last_touchpoint": "2026-04-10",
+  "days_since_touchpoint": 17,
+  "conversation_recap": "Recent interactions with Bell Flavors & Fragrances have been positive, with discussions around purchase orders and delivery dates. The last conversation involved confirming a purchase order with a price of USD 3.57/Kg, and Elchemy is awaiting a revised PO from Tara. There was also a clarification on the delivery date for product BB, which is confirmed for the end of April.",
+  "customer_snapshot": "Bell Flavors & Fragrances is a mid-size company in the F&F industry, manufacturing flavor compounds, fragrance oils, and aromatic chemicals. They have not placed any orders with Elchemy yet, indicating an early-stage relationship with potential for growth.",
+  "whats_new": "Bell Flavors & Fragrances recently identified 2026 micro trends, which could influence their product development. No other company-specific news in the period.",
+  "market_context": "The F&F industry is influenced by consumer preferences for natural and sustainable ingredients, which may affect Bell's demand for natural extracts and essential oils. The acquisition of Nardev Chemie's fragrance division positions Bell to expand its offerings in the fragrance sector.",
+  "pitch_angles": [
+    {
+      "product_name": "Polysorbate 20",
+      "rationale": "Previously inquired about by Bell Flavors & Fragrances in December 2025, indicating potential interest in this emulsifier for their formulations."
+    },
+    {
+      "product_name": "PHENYL ACETALDEHYDE 50% PEA NAT in DPG or PEA, 50/50 cut",
+      "rationale": "Bell showed interest in this product in September 2025, which aligns with their focus on aromatic chemicals."
+    },
+    {
+      "product_name": "B ALOE VERA FD 200X NAT, P+",
+      "rationale": "Inquired about in September 2025, this natural ingredient could be relevant given the trend towards natural products."
+    },
+    {
+      "product_name": "MANNITOL POWDER USP SYN",
+      "rationale": "Previously inquired about in September 2025, this product could be a fit for their flavor compound formulations."
+    },
+    {
+      "product_name": "VANILLIN SYN",
+      "rationale": "Inquired about in September 2025, vanillin is a key ingredient in the flavor industry and aligns with Bell's product portfolio."
+    }
+  ],
+  "conversation_starters": [
+    "Have you had a chance to explore the 2026 micro trends identified by Bell? How do you see these influencing your product development?",
+    "I noticed Bell recently acquired Nardev Chemie's fragrance division. How is this impacting your current projects or product offerings?",
+    "Given the confirmed delivery date for product BB at the end of April, are there any other products you anticipate needing in the near future?",
+    "With the focus on natural and sustainable ingredients, are there any specific natural extracts or essential oils you're looking to source?",
+    "Since the last discussion on ISO E Super, have there been any updates on your requirements for Benzyl Benzoate or PTBCHA?"
+  ]
+}

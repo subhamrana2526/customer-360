@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Elchemy Customer 360</title>
-  <link rel="stylesheet" href="/static/style.css?v=2" />
+  <link rel="stylesheet" href="/static/style.css?v=3" />
 </head>
 <body>
   <header>
@@ -15,9 +15,39 @@
     </nav>
   </header>
   <main>
+    <div class="list-toolbar">
+      <button id="add-customer-btn" class="add-btn">+ Add Customer</button>
+    </div>
     <div id="customer-grid" class="grid"></div>
   </main>
-  <script src="/static/app.js"></script>
+
+  <!-- Add Customer Modal -->
+  <div id="add-customer-modal" class="modal-backdrop">
+    <div class="modal">
+      <h2 class="modal-title">Add Customer</h2>
+      <p class="modal-sub">Enter the IDs — we'll infer the profile and generate the brief automatically.</p>
+      <form id="add-customer-form">
+        <label class="field-label">Company Name <span class="req">*</span></label>
+        <input id="ac-company" class="field-input" type="text" placeholder="e.g. Givaudan SA" required />
+
+        <label class="field-label">HubSpot Company ID</label>
+        <input id="ac-hubspot" class="field-input" type="text" placeholder="e.g. 15453556810" />
+
+        <label class="field-label">Elixir Customer ID</label>
+        <input id="ac-elixir" class="field-input" type="text" placeholder="e.g. 32d782e0-648b-..." />
+
+        <p id="ac-status" class="ac-status"></p>
+        <p id="ac-error" class="ac-error"></p>
+
+        <div class="modal-actions">
+          <button type="button" id="ac-cancel" class="btn-secondary">Cancel</button>
+          <button type="submit" id="ac-submit" class="btn-primary">Generate Brief</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/app.js?v=3"></script>
   <script>renderCustomerList();</script>
 </body>
 </html>
