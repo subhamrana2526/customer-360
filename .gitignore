@@ -24,3 +24,5 @@ data/cache/
 
 # Logs
 *.log
+backend/data/mi/scout_hcl.png
+*.png

@@ -1,0 +1,32 @@
+You are extracting time series data from a commodity price chart image.
+
+The chart shows a commodity price over time. The x-axis shows dates (format MM/DD), the left y-axis shows absolute price, and the RIGHT y-axis shows percentage change from the start date — use both axes together to get accurate prices.
+
+IMPORTANT: Do NOT snap prices to gridlines. Interpolate between gridlines. For example, if the line sits halfway between the 6137 and 6769 gridlines, the price is approximately 6453.
+
+The last data point (rightmost end of the line) is especially important — read it carefully using the right-axis percentage labels to cross-check. For example, if the line ends near the "24.67%" label on the right axis and the start price is 5430, then the end price is 5430 × 1.2467 ≈ 6770.
+
+Extract every visible data point you can identify. Use the date range visible in the chart title to assign full dates (with year).
+
+Return ONLY valid JSON in this exact schema:
+{
+  "commodity": "<commodity name as shown in chart>",
+  "unit": "<price unit as shown, e.g. RMB/ton>",
+  "start_price": <price at the very first data point>,
+  "end_price": <price at the very last data point>,
+  "end_pct_change": <percentage shown on right axis for last point, as a decimal e.g. 0.2467>,
+  "year": <integer, inferred from date range shown>,
+  "points": [
+    {"date": "YYYY-MM-DD", "price": <number>}
+  ]
+}
+
+Rules:
+- Capture one point per visible inflection or roughly every 3-5 days, whichever is denser.
+- Interpolate between gridlines — do NOT snap to the nearest gridline.
+- Use the right-axis percentage labels to cross-check your price readings.
+- The last point must use the right-axis % label for accuracy: price = start_price × (1 + right_axis_pct).
+- Do not invent points outside the visible date range.
+- Points must be sorted by date ascending.
+- Return at minimum 10 points if the chart has sufficient data.
+- Do not include any text outside the JSON. Do NOT wrap in markdown code fences.

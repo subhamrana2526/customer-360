@@ -1,34 +1,7 @@
 [
   {
-    "id": "toluene_cn",
-    "name": "Toluene (China)",
-    "category": "raw_material",
-    "source": "sunsirs",
-    "source_url": "https://www.sunsirs.com/uk/prodetail-177.html",
-    "sunsirs_id": 177,
-    "unit": "RMB/ton"
-  },
-  {
-    "id": "naoh_cn",
-    "name": "Caustic Soda (China)",
-    "category": "raw_material",
-    "source": "sunsirs",
-    "source_url": "https://www.sunsirs.com/uk/prolist-1.html",
-    "sunsirs_id": null,
-    "unit": "RMB/ton"
-  },
-  {
-    "id": "chlorine_cn",
-    "name": "Chlorine (China)",
-    "category": "raw_material",
-    "source": "sunsirs",
-    "source_url": "https://www.sunsirs.com/uk/prolist-1.html",
-    "sunsirs_id": null,
-    "unit": "RMB/ton"
-  },
-  {
-    "id": "lpg_cn",
-    "name": "LPG (China)",
+    "id": "lpg",
+    "name": "LPG",
     "category": "energy",
     "source": "sunsirs",
     "source_url": "https://www.sunsirs.com/uk/prodetail-158.html",
@@ -36,11 +9,407 @@
     "unit": "RMB/ton"
   },
   {
+    "id": "coke",
+    "name": "Coke",
+    "category": "energy",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-346.html",
+    "sunsirs_id": 346,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "thermal_coal",
+    "name": "Thermal Coal",
+    "category": "energy",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-369.html",
+    "sunsirs_id": 369,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "fuel_oil",
+    "name": "Fuel Oil",
+    "category": "energy",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-387.html",
+    "sunsirs_id": 387,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "gasoline",
+    "name": "Gasoline",
+    "category": "energy",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-437.html",
+    "sunsirs_id": 437,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "diesel",
+    "name": "Diesel",
+    "category": "energy",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-490.html",
+    "sunsirs_id": 490,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "dme",
+    "name": "DME",
+    "category": "energy",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-684.html",
+    "sunsirs_id": 684,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "coking_coal",
+    "name": "Coking coal",
+    "category": "energy",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-1121.html",
+    "sunsirs_id": 1121,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "urea",
+    "name": "Urea",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-89.html",
+    "sunsirs_id": 89,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "dap",
+    "name": "DAP",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-99.html",
+    "sunsirs_id": 99,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "benzene",
+    "name": "Benzene",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-120.html",
+    "sunsirs_id": 120,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "hydrofluoric_acid",
+    "name": "Hydrofluoric acid",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-123.html",
+    "sunsirs_id": 123,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "styrene",
+    "name": "Styrene",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-168.html",
+    "sunsirs_id": 168,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "toluene",
+    "name": "Toluene",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-177.html",
+    "sunsirs_id": 177,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "acetic_acid",
+    "name": "Acetic acid",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-218.html",
+    "sunsirs_id": 218,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "ethylene_glycol",
+    "name": "Ethylene glycol",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-222.html",
+    "sunsirs_id": 222,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "soda_ash",
+    "name": "Soda ash",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-226.html",
+    "sunsirs_id": 226,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "sulfuric_acid",
+    "name": "Sulfuric acid",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-236.html",
+    "sunsirs_id": 236,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "aniline",
+    "name": "Aniline",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-258.html",
+    "sunsirs_id": 258,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "hydrochloric_acid",
+    "name": "Hydrochloric acid",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-355.html",
+    "sunsirs_id": 355,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "caustic_soda",
+    "name": "Caustic soda",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-368.html",
+    "sunsirs_id": 368,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "sulfur",
+    "name": "Sulfur",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-427.html",
+    "sunsirs_id": 427,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "methanol",
+    "name": "Methanol",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-429.html",
+    "sunsirs_id": 429,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "propylene_oxide",
+    "name": "Propylene oxide",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-438.html",
+    "sunsirs_id": 438,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "polysilicon",
+    "name": "Polysilicon",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-463.html",
+    "sunsirs_id": 463,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "phenol",
+    "name": "Phenol",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-464.html",
+    "sunsirs_id": 464,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "2_eh",
+    "name": "2-EH",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-489.html",
+    "sunsirs_id": 489,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "dop",
+    "name": "DOP",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-538.html",
+    "sunsirs_id": 538,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "pa",
+    "name": "PA",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-541.html",
+    "sunsirs_id": 541,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "acetone",
+    "name": "Acetone",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-582.html",
+    "sunsirs_id": 582,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "acrylic_acid",
+    "name": "Acrylic acid",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-584.html",
+    "sunsirs_id": 584,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "chloroform",
+    "name": "Chloroform",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-608.html",
+    "sunsirs_id": 608,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "calcium_carbide",
+    "name": "Calcium carbide",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-640.html",
+    "sunsirs_id": 640,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "bromine",
+    "name": "Bromine",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-643.html",
+    "sunsirs_id": 643,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "titanium_dioxide",
+    "name": "Titanium Dioxide",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-645.html",
+    "sunsirs_id": 645,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "sodium_metabisulfite",
+    "name": "Sodium metabisulfite",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-648.html",
+    "sunsirs_id": 648,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "maleic_anhydride",
+    "name": "Maleic anhydride",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-660.html",
+    "sunsirs_id": 660,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "mtbe",
+    "name": "MTBE",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-677.html",
+    "sunsirs_id": 677,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "phosphorus_yellow",
+    "name": "Phosphorus yellow",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-708.html",
+    "sunsirs_id": 708,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "nitric_acid",
+    "name": "Nitric acid",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-723.html",
+    "sunsirs_id": 723,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "activated_charcoal",
+    "name": "Activated charcoal",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-736.html",
+    "sunsirs_id": 736,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "potassium_chloride",
+    "name": "Potassium chloride",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-759.html",
+    "sunsirs_id": 759,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "adipic_acid",
+    "name": "Adipic acid",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-837.html",
+    "sunsirs_id": 837,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "ethylene_oxide",
+    "name": "Ethylene oxide",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-856.html",
+    "sunsirs_id": 856,
+    "unit": "RMB/ton"
+  },
+  {
+    "id": "xylene",
+    "name": "Xylene",
+    "category": "raw_material",
+    "source": "sunsirs",
+    "source_url": "https://www.sunsirs.com/uk/prodetail-1222.html",
+    "sunsirs_id": 1222,
+    "unit": "RMB/ton"
+  },
+  {
     "id": "fx_usd_inr",
     "name": "USD/INR",
     "category": "fx",
     "source": "rbi",
-    "source_url": "https://www.rbi.org.in/Scripts/ReferenceRateArchive.aspx",
+    "source_url": "https://api.frankfurter.app",
     "sunsirs_id": null,
     "unit": "INR per USD"
   },
@@ -49,13 +418,13 @@
     "name": "USD/CNY",
     "category": "fx",
     "source": "rbi",
-    "source_url": "https://www.rbi.org.in/Scripts/ReferenceRateArchive.aspx",
+    "source_url": "https://api.frankfurter.app",
     "sunsirs_id": null,
     "unit": "CNY per USD"
   },
   {
     "id": "freight_in_us_east",
-    "name": "Freight India → US East",
+    "name": "Freight India \u2192 US East",
     "category": "freight",
     "source": "internal",
     "source_url": null,

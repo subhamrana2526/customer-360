@@ -14,7 +14,7 @@ def default_coefficients(product_id: str) -> dict[str, float]:
 
 def evaluate_additive(
     coefficients: dict[str, float],
-    window_days: int = 30,
+    window_days: int = 90,
     end_date: date | None = None,
 ) -> dict:
     """Σ (coef_i × pct_change_i)  over the window."""

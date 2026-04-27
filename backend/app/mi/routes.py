@@ -15,6 +15,12 @@ def health():
     return {"status": "ok", "module": "mi"}
 
 
+@router.get("/factors")
+def list_all_factors():
+    """Full factor list — used by UI 'Add factor' dropdown."""
+    return store.load_factors()
+
+
 @router.get("/products")
 def list_products():
     """Products with their latest 30-day signal."""

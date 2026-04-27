@@ -130,7 +130,19 @@ async function renderMIProductDetail() {
           responsive: true,
           plugins: { legend: { display: false } },
           scales: {
-            x: { display: false },
+            x: {
+              display: true,
+              ticks: {
+                font: { size: 10 },
+                color: '#888',
+                maxTicksLimit: 6,
+                callback: function(val) {
+                  const d = new Date(this.getLabelForValue(val));
+                  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+                }
+              },
+              grid: { display: false }
+            },
             y: { ticks: { font: { size: 10 } }, grid: { color: '#eee' } }
           }
         }

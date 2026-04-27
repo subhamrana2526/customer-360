@@ -19,7 +19,7 @@ def _summary_line(product_name: str, result: dict) -> str:
     )
 
 
-def signal_for_product(product_id: str, window_days: int = 30) -> dict:
+def signal_for_product(product_id: str, window_days: int = 90) -> dict:
     product = store.get_product(product_id)
     if not product:
         return {}
@@ -38,7 +38,7 @@ def signal_for_product(product_id: str, window_days: int = 30) -> dict:
     }
 
 
-def all_signals(window_days: int = 30) -> list[dict]:
+def all_signals(window_days: int = 90) -> list[dict]:
     return [signal_for_product(p["id"], window_days) for p in store.load_products()]
 
 
