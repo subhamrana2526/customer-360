@@ -2,28 +2,23 @@
   "benzyl_alcohol": [
     {
       "factor_id": "toluene",
-      "weight_pct": 80,
+      "weight_pct": 80.0,
       "notes": "Primary feedstock"
     },
     {
       "factor_id": "caustic_soda",
-      "weight_pct": 6,
+      "weight_pct": 6.0,
       "notes": "Reagent"
     },
     {
       "factor_id": "hydrochloric_acid",
-      "weight_pct": 6,
+      "weight_pct": 6.0,
       "notes": "Reagent"
     },
     {
       "factor_id": "lpg",
-      "weight_pct": 5,
+      "weight_pct": 5.0,
       "notes": "Energy proxy"
-    },
-    {
-      "factor_id": "fx_usd_cny",
-      "weight_pct": 3,
-      "notes": "FX exposure"
     }
   ],
   "benzaldehyde": [

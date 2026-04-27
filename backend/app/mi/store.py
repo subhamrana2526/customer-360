@@ -48,6 +48,14 @@ def get_recipe(product_id: str) -> list[dict]:
     return load_recipes().get(product_id, [])
 
 
+def save_recipe(product_id: str, recipe: list[dict]) -> None:
+    """Persist a recipe edit back to recipes.json and bust the cache."""
+    recipes = load_recipes().copy()
+    recipes[product_id] = recipe
+    (MI_DATA_DIR / "recipes.json").write_text(json.dumps(recipes, indent=2))
+    load_recipes.cache_clear()
+
+
 def get_factor_series(factor_id: str) -> list[dict]:
     """Return [{date, price}] sorted ascending."""
     return _load_prices().get(factor_id, [])

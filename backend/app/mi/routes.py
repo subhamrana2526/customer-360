@@ -4,8 +4,19 @@ Self-contained: only imports from app.mi.* and app.config. Does not depend on
 Customer 360 connectors / stages / models.
 """
 from fastapi import APIRouter, HTTPException
+from pydantic import BaseModel
 
 from app.mi import signals, store
+
+
+class RecipeItem(BaseModel):
+    factor_id: str
+    weight_pct: float
+    notes: str | None = ""
+
+
+class UpdateRecipeRequest(BaseModel):
+    recipe: list[RecipeItem]
 
 router = APIRouter(prefix="/api/mi", tags=["market-intelligence"])
 
@@ -66,6 +77,27 @@ def get_product_factors(product_id: str):
             "series": store.get_factor_series(r["factor_id"]),
         })
     return {"product_id": product_id, "factors": out}
+
+
+@router.put("/products/{product_id}/recipe")
+def update_recipe(product_id: str, req: UpdateRecipeRequest):
+    """Persist a recipe edit. Validates each factor exists."""
+    if not store.get_product(product_id):
+        raise HTTPException(404, f"Product {product_id} not found")
+    for item in req.recipe:
+        if not store.get_factor(item.factor_id):
+            raise HTTPException(400, f"Unknown factor: {item.factor_id}")
+    store.save_recipe(product_id, [item.model_dump() for item in req.recipe])
+    return {"status": "ok", "signal": signals.signal_for_product(product_id)}
+
+
+@router.get("/factors/{factor_id}/series")
+def get_factor_series(factor_id: str):
+    """Time series for any factor — used when adding a factor to a recipe."""
+    factor = store.get_factor(factor_id)
+    if not factor:
+        raise HTTPException(404, f"Factor {factor_id} not found")
+    return {"factor_id": factor_id, "series": store.get_factor_series(factor_id)}
 
 
 @router.get("/signals")

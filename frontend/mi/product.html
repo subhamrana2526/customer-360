@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>MI Product — Elchemy</title>
-  <link rel="stylesheet" href="/static/style.css?v=2" />
-  <link rel="stylesheet" href="/static/mi/mi.css?v=2" />
+  <link rel="stylesheet" href="/static/style.css?v=6" />
+  <link rel="stylesheet" href="/static/mi/mi.css?v=6" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
@@ -14,24 +14,45 @@
     <div id="product-meta" class="meta"></div>
   </header>
   <main>
-    <section id="signal-card" class="signal-card empty">Loading signal…</section>
-
-    <section class="mi-panel">
-      <h2 class="mi-section-title">Recipe — cost structure</h2>
-      <table class="recipe-table">
-        <thead>
-          <tr><th>Factor</th><th>Category</th><th>Weight %</th><th>Notes</th></tr>
-        </thead>
-        <tbody id="recipe-body"><tr><td colspan="4" class="empty">Loading…</td></tr></tbody>
-      </table>
-    </section>
-
+    <!-- 1. Factor charts (top) -->
     <section class="mi-panel">
       <h2 class="mi-section-title">Factor price history (90 days)</h2>
       <div id="factor-charts" class="factor-grid"></div>
     </section>
+
+    <!-- 2. Recipe table -->
+    <section class="mi-panel">
+      <div class="recipe-header">
+        <h2 class="mi-section-title">Recipe — cost structure</h2>
+        <div class="recipe-actions">
+          <span id="save-status" class="save-status"></span>
+          <select id="add-factor-select" class="factor-select">
+            <option value="">+ Add factor…</option>
+          </select>
+        </div>
+      </div>
+      <table class="recipe-table">
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th>Category</th>
+            <th>Weight %</th>
+            <th>90d Delta</th>
+            <th>Notes</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="recipe-body">
+          <tr><td colspan="6" class="empty">Loading…</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 3. Signal banner (below recipe) -->
+    <section id="signal-card" class="signal-card empty">Loading signal…</section>
   </main>
-  <script src="/static/mi/mi.js?v=2"></script>
+
+  <script src="/static/mi/mi.js?v=6"></script>
   <script>renderMIProductDetail();</script>
 </body>
 </html>
