@@ -22,8 +22,9 @@ OPENAI_MODEL_SUMM = os.getenv("OPENAI_MODEL_SUMM", "gpt-4o-mini")
 HUBSPOT_TOKEN = os.getenv("HUBSPOT_TOKEN", "")
 HUBSPOT_WINDOW_DAYS = int(os.getenv("HUBSPOT_WINDOW_DAYS", "180"))
 
-ELIXIR_BASE_URL = os.getenv("ELIXIR_BASE_URL", "")
+ELIXIR_BASE_URL = os.getenv("ELIXIR_BASE_URL", "https://api-v2.elchemy.com")
 ELIXIR_TOKEN = os.getenv("ELIXIR_TOKEN", "")
+ELIXIR_API_KEY = os.getenv("ELIXIR_API_KEY", "")
 
 NEWS_CAP = int(os.getenv("NEWS_CAP", "15"))
 

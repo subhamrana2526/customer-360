@@ -8,7 +8,7 @@
     "segment": "end_user",
     "geography": "India",
     "hubspot_company_id": null,
-    "elixir_customer_id": null,
+    "elixir_customer_id": "6f2304e4-c05c-4b99-941a-116e030b07ed",
     "manufacturing_profile": {
       "products_made": ["shampoos", "conditioners", "body washes"],
       "scale": "Mid-size (50-200 cr revenue)",
