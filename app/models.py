@@ -52,12 +52,22 @@ class HubSpotCall(BaseModel):
     notes: str | None = None
 
 
+class InquiredProduct(BaseModel):
+    name: str
+    deal_name: str = ""
+    deal_stage: str | None = None
+    deal_date: date | None = None
+    quantity: float | None = None
+    is_open_deal: bool = True
+
+
 class HubSpotRaw(BaseModel):
     customer_id: str
     pulled_at: datetime
     emails: list[HubSpotEmail] = Field(default_factory=list)
     meetings: list[HubSpotMeeting] = Field(default_factory=list)
     calls: list[HubSpotCall] = Field(default_factory=list)
+    inquired_products: list[InquiredProduct] = Field(default_factory=list)
 
 
 class Order(BaseModel):
@@ -120,6 +130,7 @@ class OrderAggregate(BaseModel):
     inquiry_count: int = 0
     inquiry_to_order_rate: float = 0.0
     products_inquired_not_ordered: list[str] = Field(default_factory=list)
+    open_order_products: list[str] = Field(default_factory=list)
 
 
 class FilteredNewsItem(NewsItem):
@@ -132,6 +143,7 @@ class Stage1Output(BaseModel):
     thread_summaries: list[ThreadSummary] = Field(default_factory=list)
     order_aggregate: OrderAggregate
     filtered_news: list[FilteredNewsItem] = Field(default_factory=list)
+    inquired_products: list[InquiredProduct] = Field(default_factory=list)
 
 
 class PitchAngle(BaseModel):
@@ -146,7 +158,6 @@ class PrepBrief(BaseModel):
     last_touchpoint: date | None = None
     days_since_touchpoint: int | None = None
 
-    tldr: str
     conversation_recap: str
     customer_snapshot: str
     whats_new: str

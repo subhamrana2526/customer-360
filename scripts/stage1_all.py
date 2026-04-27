@@ -26,6 +26,7 @@ def main() -> None:
             thread_summaries=summarize_threads(hs),
             order_aggregate=aggregate(el),
             filtered_news=filter_news(c, nw),
+            inquired_products=hs.inquired_products,
         )
         (stage1_dir(c.customer_id) / "stage1.json").write_text(out.model_dump_json(indent=2))
 
