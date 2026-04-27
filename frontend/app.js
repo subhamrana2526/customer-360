@@ -32,15 +32,7 @@ function renderBrief(brief) {
   const starters = (brief.conversation_starters || [])
     .map(s => `<li>${s}</li>`)
     .join('');
-  const since = brief.days_since_touchpoint != null
-    ? `${brief.days_since_touchpoint} days since last touchpoint`
-    : 'No touchpoint on file';
   return `
-    <div class="tldr">
-      <span class="badge">${since}</span>
-      <h2>TL;DR</h2>
-      <p>${brief.tldr}</p>
-    </div>
     <h2>Conversation recap</h2><p>${brief.conversation_recap}</p>
     <h2>Customer snapshot</h2><p>${brief.customer_snapshot}</p>
     <h2>What's new</h2><p>${brief.whats_new}</p>
