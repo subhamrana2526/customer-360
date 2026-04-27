@@ -1,0 +1,41 @@
+{
+  "customer_id": "lr-ff-001",
+  "company_name": "L.R. Flavours & Fragrances Industries S.p.A.",
+  "generated_at": "2026-04-27T13:59:04.233622Z",
+  "last_touchpoint": "2026-04-24",
+  "days_since_touchpoint": 3,
+  "tldr": "Last touchpoint was on April 24, 2026. Address the pending proforma invoices for POs 638, 639, and 640. Strong pitch opportunity with Diethyl Phthalate, a top product for them.",
+  "conversation_recap": "The last interaction on April 24, 2026, involved confirming receipt of POs 638, 639, and 640 for Diethyl Phthalate, pending sample approval. Elchemy needs to send proforma invoices for these orders, and Sebastiano Aiello is expected to confirm and revise the POs in the name of Elchemy INC. Pricing negotiations for Benzaldehyde are ongoing, with a revised offer at EUR 1.87/Kg, slightly above the customer's target of EUR 1.79/Kg.",
+  "customer_snapshot": "L.R. Flavours & Fragrances Industries S.p.A. is a mid-size Italian manufacturer of flavours, fragrances, and aroma chemicals. They have purchased Diethyl Phthalate from us, with a total order value of EUR 133,862.40 YTD. The relationship is active with recent orders and ongoing negotiations.",
+  "whats_new": "No company-specific news in the period.",
+  "market_context": "The F&F industry is sensitive to regulatory changes, such as REACH compliance, which L.R. Flavours & Fragrances strictly adheres to. The recent India-EU Free Trade Agreement could benefit their sourcing of aroma and fragrance ingredients, potentially lowering costs and improving supply chain efficiency.",
+  "pitch_angles": [
+    {
+      "product_name": "Diethyl Phthalate",
+      "rationale": "They have recently placed multiple orders for Diethyl Phthalate, making it a key product in their portfolio. Ensuring smooth processing of current orders could strengthen our position as a reliable supplier."
+    },
+    {
+      "product_name": "Benzaldehyde",
+      "rationale": "Ongoing price negotiations indicate interest in Benzaldehyde. Offering a competitive price closer to their target could close the deal and increase order volume."
+    },
+    {
+      "product_name": "CAPB 30%",
+      "rationale": "As a manufacturer of personal care ingredients, CAPB 30% could complement their product line, especially given the recent interest in surfactants."
+    },
+    {
+      "product_name": "Phenoxyethanol",
+      "rationale": "As a preservative, Phenoxyethanol could be a valuable addition to their formulations, aligning with their need for specialty ingredients."
+    },
+    {
+      "product_name": "Glycerin USP",
+      "rationale": "Given their production of food-grade products, Glycerin USP could serve as a versatile humectant in their formulations."
+    }
+  ],
+  "conversation_starters": [
+    "Discuss the status of the proforma invoices for POs 638, 639, and 640 to ensure timely processing and shipment.",
+    "Explore the possibility of revising the Benzaldehyde offer to meet their target price, potentially closing the ongoing negotiation.",
+    "Inquire about their interest in expanding their product line with CAPB 30% or Phenoxyethanol, given their focus on personal care ingredients.",
+    "Leverage the India-EU Free Trade Agreement to discuss potential cost benefits in sourcing aroma chemicals from Elchemy.",
+    "Ask about their current needs for regulatory documentation, such as REACH compliance, to ensure all requirements are met for future orders."
+  ]
+}

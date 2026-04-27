@@ -1,0 +1,20 @@
+[
+  {
+    "customer_id": "lr-ff-001",
+    "company_name": "L.R. Flavours & Fragrances Industries S.p.A.",
+    "website": "https://lrindustries.it",
+    "industry": "F&F",
+    "sub_industry": ["Flavours", "Fragrances"],
+    "segment": "end_user",
+    "geography": "Italy",
+    "hubspot_company_id": "15453556810",
+    "elixir_customer_id": "32d782e0-648b-4329-a2d2-2ed36f30d548",
+    "manufacturing_profile": {
+      "products_made": ["flavours", "fragrances", "aroma chemicals"],
+      "scale": "Mid-size",
+      "likely_inputs": ["aroma chemicals", "essential oils", "naturals", "food-grade solvents"]
+    },
+    "historical_context": "Italian F&F manufacturer active since at least mid-2024. Primary contact is Sebastiano Aiello (Purchasing Officer). Buys food-grade aroma chemicals and specialty ingredients. Strict documentation requirements (COA, TDS, SDS, Food Grade certs, Kosher, REACH compliance).",
+    "notes": null
+  }
+]
