@@ -1,20 +1,20 @@
 [
   {
-    "customer_id": "demo-001",
-    "company_name": "Sample Personal Care Co.",
-    "website": "https://example.com",
-    "industry": "Personal Care",
-    "sub_industry": ["Hair Care", "Body Wash"],
+    "customer_id": "lr-ff-001",
+    "company_name": "L.R. Flavours & Fragrances Industries S.p.A.",
+    "website": "https://lrindustries.it",
+    "industry": "F&F",
+    "sub_industry": ["Flavours", "Fragrances"],
     "segment": "end_user",
-    "geography": "India",
-    "hubspot_company_id": null,
+    "geography": "Italy",
+    "hubspot_company_id": "15453556810",
     "elixir_customer_id": "6f2304e4-c05c-4b99-941a-116e030b07ed",
     "manufacturing_profile": {
-      "products_made": ["shampoos", "conditioners", "body washes"],
-      "scale": "Mid-size (50-200 cr revenue)",
-      "likely_inputs": ["SLES", "CAPB", "preservatives", "fragrance"]
+      "products_made": ["flavours", "fragrances", "aroma chemicals"],
+      "scale": "Mid-size",
+      "likely_inputs": ["aroma chemicals", "essential oils", "naturals", "food-grade solvents"]
     },
-    "historical_context": "Long-standing customer of Elchemy since 2022. Primarily buys surfactants for their shampoo line. Annual GMV trending up.",
-    "notes": "Replace with real customer once HubSpot/Elixir IDs are confirmed."
+    "historical_context": "Italian F&F manufacturer active since at least mid-2024. Primary contact is Sebastiano Aiello (Purchasing Officer). Buys food-grade aroma chemicals and specialty ingredients. Strict documentation requirements (COA, TDS, SDS, Food Grade certs, Kosher, REACH compliance).",
+    "notes": null
   }
 ]
