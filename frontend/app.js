@@ -205,9 +205,18 @@ function renderStatsStrip(stage1, raw) {
   if (!root) return;
 
   const oa = stage1?.order_aggregate || {};
-  const threads = (stage1?.thread_summaries || []).length;
+  const summarizedThreads = (stage1?.thread_summaries || []).length;
   const news = (stage1?.filtered_news || []).length;
   const inquiredCount = (raw?.hubspot?.inquired_products || []).length;
+
+  // Stage 1 caps thread summaries at 10. To know the true count, derive it
+  // from raw HubSpot emails — if the underlying count exceeds what's shown,
+  // append a "+" so the user knows there's more behind the cap.
+  const emails = raw?.hubspot?.emails || [];
+  const trueThreadCount = new Set(emails.map(e => e?.thread_id).filter(Boolean)).size;
+  const threadDisplay = trueThreadCount > summarizedThreads
+    ? `${summarizedThreads}+`
+    : (summarizedThreads || '—');
 
   // Last activity = newer of last_order_date and most-recent thread date_end
   const threadEnds = (stage1?.thread_summaries || []).map(t => t.date_end).filter(Boolean);
@@ -220,7 +229,7 @@ function renderStatsStrip(stage1, raw) {
     _statCard(oa.total_orders ?? '—',                                    'Total Orders'),
     _statCard(oa.total_value_ytd != null ? _formatCurrency(oa.total_value_ytd) : '—', 'Value YTD'),
     _statCard(daysSince != null ? `${daysSince}d` : '—',                 'Since Last Activity'),
-    _statCard(threads || '—',                                            'Email Threads'),
+    _statCard(threadDisplay,                                             'Email Threads'),
     _statCard(inquiredCount || '—',                                      'Inquired Products'),
     _statCard(news || '—',                                               'Recent News'),
   ].join('');

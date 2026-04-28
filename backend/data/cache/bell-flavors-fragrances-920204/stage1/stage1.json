@@ -1,0 +1,934 @@
+{
+  "customer_id": "bell-flavors-fragrances-920204",
+  "generated_at": "2026-04-28T05:05:36.177405Z",
+  "thread_summaries": [
+    {
+      "thread_id": "b2f29f68818c752d8c0f64b5dc2dd203",
+      "date_start": "2026-04-10",
+      "date_end": "2026-04-10",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "tgumann@bellff.com"
+      ],
+      "summary": "Tara shared an updated purchase order (PO) with Elchemy, and Aditya confirmed the price of USD 3.57/Kg as per the blanket PO. Elchemy will proceed with the next steps and keep Tara updated on the progress.",
+      "open_items": [
+        "Tara to provide the revised PO with the confirmed price"
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "532f3c0f710b7342d3fbc0f143ff6bc1",
+      "date_start": "2026-04-10",
+      "date_end": "2026-04-10",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "ankit.singh@elchemy.com",
+        "ops@elchemy.com",
+        "tgumann@bellff.com"
+      ],
+      "summary": "The customer, Tara Gumann, expressed confusion over a delayed delivery date for product BB, initially expected at the end of April but now stated as the end of May. Elchemy's representative, Aditya Agarwal, clarified that the previous message contained an error and confirmed that the product will indeed be delivered by the end of April.",
+      "open_items": [],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "BB"
+      ]
+    },
+    {
+      "thread_id": "a72a8f665a167febd5f2c930ca8d4051",
+      "date_start": "2026-04-09",
+      "date_end": "2026-04-09",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "tgumann@bellff.com"
+      ],
+      "summary": "Elchemy confirmed the receipt of the new purchase order (PO 12P0007120) and the requested delivery date and quantity. They requested a revision of the price to USD 3.57/Kg as per the previously finalized blanket PO.",
+      "open_items": [
+        "Await updated PO from customer with revised pricing"
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "94eea3d83a698fe61eee9669410af621",
+      "date_start": "2026-03-31",
+      "date_end": "2026-03-31",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "tgumann@bellff.com"
+      ],
+      "summary": "Elchemy confirmed the completion of the contract for ISO E Super and provided details on previous purchase orders. They are awaiting communication from the customer regarding the delivery of Benzyl Benzoate and PTBCHA, which will be available by the end of April 2026, and are still waiting for updates on Lilialdehyde.",
+      "open_items": [
+        "Awaiting customer's decision on PO 12P0007073 for 2600 Kg of ISO E Super.",
+        "Awaiting communication from the customer regarding the delivery of Benzyl Benzoate and PTBCHA."
+      ],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "ISO E Super",
+        "Benzyl Benzoate",
+        "PTBCHA",
+        "Lilialdehyde"
+      ]
+    },
+    {
+      "thread_id": "92938ad48baa799a8cd586500310b9b4",
+      "date_start": "2026-03-30",
+      "date_end": "2026-03-30",
+      "participants": [
+        "jitesh.chauhan@elchemy.com",
+        "mbenson@bellff.com"
+      ],
+      "summary": "The customer, Michele, confirmed that the invoices are scheduled to be paid next week via ACH. Jitesh from Elchemy requested confirmation of payment to close the shipment in their system.",
+      "open_items": [
+        "Elchemy is awaiting confirmation of payment to close the shipment in their system."
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "aa940b42760eeb85dcacb2c337ce2547",
+      "date_start": "2026-03-14",
+      "date_end": "2026-03-16",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "hgoss@bellff.com",
+        "jitesh.chauhan@elchemy.com"
+      ],
+      "summary": "The customer, Holly, flagged an expiration date mismatch for iso e super VL: 389540 on PO 12P0006825. Elchemy's team confirmed the issue and provided an updated Certificate of Analysis (COA) with the correct expiration date.",
+      "open_items": [],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "iso e super VL: 389540"
+      ]
+    },
+    {
+      "thread_id": "9f5446c1671a812c5a06f4fbe4815a33",
+      "date_start": "2026-02-24",
+      "date_end": "2026-02-26",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "jlocascio@bellff.com"
+      ],
+      "summary": "Elchemy has been in communication with Jennifer regarding the updated COI insurance form needed for their Trace Gains system. Aditya confirmed that the updated COI has been sent and offered further assistance if needed.",
+      "open_items": [],
+      "sentiment": "positive",
+      "key_products_discussed": [
+        "COI insurance"
+      ]
+    },
+    {
+      "thread_id": "e342780f658803fee707713eaa2f888e",
+      "date_start": "2026-02-24",
+      "date_end": "2026-02-25",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "jitesh.chauhan@elchemy.com",
+        "jlocascio@bellff.com",
+        "ops@elchemy.com",
+        "sales@elchemy.com",
+        "tgumann@bellff.com"
+      ],
+      "summary": "Elchemy confirmed the delivery date, price, and quantity for ISO E Super as per the new PO 12P0006825. They informed that Benzyl Benzoate and PTBCHA will be available by early to mid-April, while Lilial is expected by early to mid-May. Tara inquired about stock for other items on the contract.",
+      "open_items": [
+        "Tara needs to confirm if they can pull stock from other items on the contract.",
+        "Elchemy needs to provide updates on the availability of Benzyl Benzoate, PTBCHA, and Lilial."
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "ISO E Super",
+        "Benzyl Benzoate",
+        "PTBCHA (Vertenex)",
+        "Lilial"
+      ]
+    },
+    {
+      "thread_id": "fb15c69741b91e6d0b551d005348de1e",
+      "date_start": "2026-02-19",
+      "date_end": "2026-02-19",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "hgoss@bellff.com"
+      ],
+      "summary": "Aditya from Elchemy provided Holly with the requested Certificate of Analysis (COA). He offered further assistance if needed.",
+      "open_items": [],
+      "sentiment": "positive",
+      "key_products_discussed": []
+    },
+    {
+      "thread_id": "b462b33aafdd2aa6553e6ff6dcc9f3de",
+      "date_start": "2026-02-16",
+      "date_end": "2026-02-17",
+      "participants": [
+        "aditya.agarwal@elchemy.com",
+        "jitesh.chauhan@elchemy.com",
+        "sales@elchemy.com",
+        "tgumann@bellff.com"
+      ],
+      "summary": "The customer, Tara, requested confirmation on the delivery status of an open order for ISO E SUPER TOCO SYN (BASF) scheduled for 2/17/2026. Elchemy's team is coordinating with their Operations Team to confirm the delivery date and has noted the customer's preference for using Old Dominion as the carrier.",
+      "open_items": [
+        "Elchemy to confirm the delivery date for the order by 2/18/2026",
+        "Elchemy to ensure the carrier Old Dominion is used for delivery"
+      ],
+      "sentiment": "neutral",
+      "key_products_discussed": [
+        "ISO E SUPER TOCO SYN (BASF)"
+      ]
+    }
+  ],
+  "order_aggregate": {
+    "customer_id": "bell-flavors-fragrances-920204",
+    "total_orders": 1,
+    "total_value_ytd": 21420.0,
+    "last_order_date": "2026-04-09",
+    "days_since_last_order": 19,
+    "top_products": [
+      {
+        "name": "Benzyl Benzoate",
+        "qty": 6000.0,
+        "value": 21420.0,
+        "last_ordered": "2026-04-09"
+      }
+    ],
+    "inquiry_count": 0,
+    "inquiry_to_order_rate": 0.0,
+    "products_inquired_not_ordered": [],
+    "open_order_products": [
+      "Benzyl Benzoate"
+    ]
+  },
+  "filtered_news": [
+    {
+      "title": "Bell Flavors and Fragrances identifies 2026 micro trends",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOREc2dl9sZVJxcGk4b2RJNWxQSTNhcU1PN1pockJySFJWR1RPZ0s1ZGtnRWgzMDhpbXM4T3ZBZGZvdkZzZkJSOVpjY2dWcW1xSENzQlcwMlIycXZDVEN6dEJNbkU1MzkyT2Q2MldvWFF4dmd4QmxRRl9rMktLVlF4TGdKc05tNk9LU19pU28wRGpKT295YnVEZHdicjBnRzRwdzVPYWJUWQ?oc=5",
+      "date": "2026-01-27",
+      "source": "Food Business News",
+      "snippet": "",
+      "category": "company",
+      "why_it_matters": "Understanding emerging micro trends will help Bell Flavors & Fragrances align their product offerings with market demand."
+    },
+    {
+      "title": "Bell Flavors & Fragrances Aquires Fragrance Division of Nardev Chemie Pte, Ltd.",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVDdaUnppb0JTck95ZDBNVUFiNTRDSkJ2TzltRUNhVHZmQmxhbl9uOGVhU1F6ME5DcXZUV0FtZlFJYW5Gcm45Vno3QXZCbGNlUW5hLXRFWlN5Y056R2d6YUJ1Q0dkU2FDeGdzLWl1TjVtUEZpTlRiU2ZoYTJFbGpNY20zSFNUTGhKOUlSTnpZMnhvMzM3OV9CNmo4a041UzZkR3lWNkw3QjlSY0x5bG5RM0hmN2lkaHBUZTBuSQ?oc=5",
+      "date": "2024-09-12",
+      "source": "SupplySide Supplement Journal",
+      "snippet": "",
+      "category": "company",
+      "why_it_matters": "Acquiring Nardev Chemie's fragrance division will enhance Bell's product portfolio and competitive positioning in the fragrance market."
+    },
+    {
+      "title": "Flavor industry veteran takes over as Bell COO",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdjZvMWhXTE5RMmM1QV9xM0FwVjI1c0NxQ01rVWNpaUdxRV9md0lkRXRZdUdzU3JzTDhaRG5kN3p6NXBJQnVQS0VxWW9yN3ZmemRtUlE4d2FraUgwQ2Z1YlBUWFJsRWU0emx2YU9oLURtX2FiOHZjdVNVbDdMamwxRWt3Wm5MRWNOYnJLaWVhV255d0xBYV9RUnB3?oc=5",
+      "date": "2025-02-26",
+      "source": "Food Business News",
+      "snippet": "",
+      "category": "company",
+      "why_it_matters": "The appointment of a seasoned COO could lead to improved operational efficiencies and strategic direction for Bell Flavors & Fragrances."
+    }
+  ],
+  "inquired_products": [
+    {
+      "name": "Polysorbate 20",
+      "deal_name": "Bell Flavors & Fragrances - Polysorbate 20 - NY (USA)",
+      "deal_stage": "closedlost",
+      "deal_date": "2025-12-15",
+      "quantity": 1.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "FIXATEUR 505E SYN",
+      "deal_name": "Bell Flavors & Fragrances - FIXATEUR 505E SYN (1 kg) - NY (USA)",
+      "deal_stage": "41822338",
+      "deal_date": "2025-10-15",
+      "quantity": 1.0,
+      "is_open_deal": true
+    },
+    {
+      "name": "PHENYL ACETALDEHYDE 50% PEA NAT in DPG or PEA, 50/50 cut",
+      "deal_name": "Bell Flavors & Fragrances - PHENYL ACETALDEHYDE 50% PEA NAT in DPG or PEA, 50/50 cut (10 kg) - NY (USA)",
+      "deal_stage": "41896469",
+      "deal_date": "2025-09-30",
+      "quantity": 10.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "WITCH HAZEL LEAF C/S W.C. HAMAMELIS VIRGINIANA NAT, P+",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 5.67,
+      "is_open_deal": false
+    },
+    {
+      "name": "B ALOE VERA FD 200X NAT, P+",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 600.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "MANNITOL POWDER USP SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 4650.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "CYCLAPROP SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 10550.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "DMBC BUTYRATE SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 2200.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "RASPBERRY KETONE SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 930.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "VANILLIN SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 1787.5,
+      "is_open_deal": false
+    },
+    {
+      "name": "Iso Bornyl Acetate",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 600.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "CAPSUL 51-6329 SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 15088.08,
+      "is_open_deal": false
+    },
+    {
+      "name": "Galaxoide DEP-",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 180.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Glycerine 99.7%- KOSHER",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 2300.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Diphenyl Oxide",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 600.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Yara Yara",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 900.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Linalyl Acetate",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 450.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "ROSEMARY OIL BLEND (SPANISH) WONF 11003 NAT, P+",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 470.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "B GLYCERIN, 99.7% USP, NON-PALM SOURCE (AL4) NAT",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 12000.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Aldehyde C-12 MNA",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 270.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Lavandin Grosso",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 270.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "PATCHOULI OIL RECT LIGHT NAT, P+",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 500.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "DIHYDRO MYRCENOL SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 9287.5,
+      "is_open_deal": false
+    },
+    {
+      "name": "L-Carvone",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 270.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "NEROLIN BROMELIA SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 3052.5,
+      "is_open_deal": false
+    },
+    {
+      "name": "APRICOT KERNEL OIL NAT",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 1400.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Aldehyde C-16",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 700.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "HEXYL CINNAMIC ALDEHYDE SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 26162.5,
+      "is_open_deal": false
+    },
+    {
+      "name": "ALMOND OIL BITTER (US Only) NAT, KOSHER",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 150.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "CITRONELLOL 950 SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 2535.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Lemongrass Oil Guatemalia",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 90.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "BUTTER OIL (CONTAINS MILK)(AL1) NAT, P+ (KOSHER ONLY)",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 26553.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "LINALOOL SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 6115.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "SIPERNAT 22 SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 5980.02,
+      "is_open_deal": false
+    },
+    {
+      "name": "LIME OIL DIST MEXICAN NAT, P+",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 450.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Aldehyde C-10 (Decanal)",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 90.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "VERTENEX SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 12135.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "LIME TERPENES NAT, P+",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 2790.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Terpineol Alpha",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 500.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "PROPYLENE GLYCOL SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 13039.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Lemon Oil Calif Nat",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 270.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Galaxoide BB",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 1000.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Geranium Oil Egyptian Nat",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 90.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "IONONE BETA SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 2520.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Heliotropine",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 180.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Ethylene Brassylate",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 270.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "HEDIONE SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 2700.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Terpinyl Acetate",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 450.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Cedarwood Oil",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 90.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "GUAIACWOOD OIL CLEANED NAT, P+",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 490.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "AMBROXAN SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 50.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "HEXYL SALICYLATE SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 7790.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Peppermint Oil Redist",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 180.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "CYCLACET SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 13100.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "ISO E SUPER TOCO SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 11020.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Citronella Oil Java Nat",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 90.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "GERANIOL 950/920 SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 2150.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "ORANGE TERPENES NAT, P+",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 7096.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "LILIAL / LILISTRALIS SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 9267.5,
+      "is_open_deal": false
+    },
+    {
+      "name": "LIPOZYME TL 100L NAT (KOSHER ONLY)",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 1600.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "ETHYL LINALOOL SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 1757.5,
+      "is_open_deal": false
+    },
+    {
+      "name": "Citronellyl Nitrile",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 270.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Undercavertol",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 360.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Benzaldehyde",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 360.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "METHYL ANTHRANILATE NAT, P+, DEA#006359BLW",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 75.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Bacdanol/Sanjinol",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 180.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Florosa",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 900.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Limonene D",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 470.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "ALMOND OIL BITTER US/EU NA - Nitro blanket- KOSHER",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 175.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Amyl Salicylate-",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 460.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "BENZYL BENZOATE SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 34650.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Galaxoide IPM- Prinova",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 500.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "B ROSA CENTIFOLIA,RED,BUDS&PETALS",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 2347.5,
+      "is_open_deal": false
+    },
+    {
+      "name": "TWEEN 20, POLYSORBATE 20 SYN(INTERMEDIATE W TEST)",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 89564.17,
+      "is_open_deal": false
+    },
+    {
+      "name": "METHYL IONONE GAMMA SUPREME /A SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 1660.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "DPG / DIPROPYLENE GLYCOL SYN",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 16696.5,
+      "is_open_deal": false
+    },
+    {
+      "name": "ORANGE OIL VALENCIA 1X NAT, P+",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 2700.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Aldehyde C-14",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 1200.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Eucalyptus Oil 80%- NO",
+      "deal_name": "Bell Flavors & Fragrances - H1 2026 RFQ - NY (USA)",
+      "deal_stage": "2202102503",
+      "deal_date": "2025-09-22",
+      "quantity": 900.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Cis-3 Hexenol",
+      "deal_name": "Bell Flavors & Fragrances - Multiple Products - USA",
+      "deal_stage": "closedlost",
+      "deal_date": "2025-08-13",
+      "quantity": 25.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Ethyl Vanillin",
+      "deal_name": "Bell Flavors & Fragrances - Multiple Products - USA",
+      "deal_stage": "closedlost",
+      "deal_date": "2025-08-13",
+      "quantity": 25.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Linalool",
+      "deal_name": "Bell Flavors & Fragrances - Multiple Products - USA",
+      "deal_stage": "closedlost",
+      "deal_date": "2025-08-13",
+      "quantity": 180.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Benzyl Acetate",
+      "deal_name": "Bell Flavors & Fragrances - Multiple Products - USA",
+      "deal_stage": "closedlost",
+      "deal_date": "2025-08-13",
+      "quantity": 220.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Hexyl Cinnamic Aldehyde",
+      "deal_name": "Bell Flavors & Fragrances - Multiple Products - USA",
+      "deal_stage": "closedlost",
+      "deal_date": "2025-08-13",
+      "quantity": 1100.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Dihydromyrcenol (DHM)",
+      "deal_name": "Bell Flavors & Fragrances - Multiple Products - USA",
+      "deal_stage": "closedlost",
+      "deal_date": "2025-08-13",
+      "quantity": 180.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Coumarin",
+      "deal_name": "Bell Flavors & Fragrances - Multiple Products - USA",
+      "deal_stage": "closedlost",
+      "deal_date": "2025-08-13",
+      "quantity": 200.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Benzyl Benzoate",
+      "deal_name": "Bell Flavors & Fragrances - Multiple Products - USA",
+      "deal_stage": "closedlost",
+      "deal_date": "2025-08-13",
+      "quantity": 1100.0,
+      "is_open_deal": false
+    },
+    {
+      "name": "Vanillin",
+      "deal_name": "Bell Flavors & Fragrances - Multiple Products - USA",
+      "deal_stage": "closedlost",
+      "deal_date": "2025-08-13",
+      "quantity": 25.0,
+      "is_open_deal": false
+    }
+  ]
+}

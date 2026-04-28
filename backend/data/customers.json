@@ -58,36 +58,5 @@
     },
     "historical_context": "Italian F&F manufacturer active since at least mid-2024. Primary contact is Sebastiano Aiello (Purchasing Officer). Buys food-grade aroma chemicals and specialty ingredients. Strict documentation requirements (COA, TDS, SDS, Food Grade certs, Kosher, REACH compliance).",
     "notes": null
-  },
-  {
-    "customer_id": "bell-flavors-fragrances-115835",
-    "company_name": "Bell Flavors & Fragrances",
-    "website": null,
-    "industry": "F&F",
-    "sub_industry": [
-      "Flavors",
-      "Fragrances",
-      "Aromatherapy"
-    ],
-    "segment": "end_user",
-    "geography": "USA",
-    "hubspot_company_id": "314257604332",
-    "elixir_customer_id": "3f3b1033-e8b2-4375-82aa-4dba051822dc",
-    "manufacturing_profile": {
-      "products_made": [
-        "Flavor compounds",
-        "Fragrance oils",
-        "Essential oils"
-      ],
-      "scale": "Mid-size",
-      "likely_inputs": [
-        "Natural extracts",
-        "Synthetic aroma chemicals",
-        "Solvents",
-        "Carrier oils"
-      ]
-    },
-    "historical_context": null,
-    "notes": null
   }
 ]
