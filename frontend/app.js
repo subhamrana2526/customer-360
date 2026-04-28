@@ -235,6 +235,18 @@ function renderStatsStrip(stage1, raw) {
   ].join('');
 }
 
+function _copyRaw(btn) {
+  const pre = document.getElementById(btn.dataset.target);
+  const text = pre ? pre.textContent : '';
+  if (!text || text === '—') return;
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = 'Copied!';
+    btn.classList.add('ds-copy-ok');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('ds-copy-ok'); }, 1800);
+  });
+}
+
 async function renderCustomerDetail() {
   const id = customerIdFromPath();
   if (!id) return;

@@ -617,6 +617,20 @@ main { padding: 24px 32px; max-width: 1200px; margin: 0 auto; }
 .ds-icon.hs { background: #ff7a59; }
 .ds-icon.ex { background: #1565c0; }
 .ds-icon.nw { background: #2e7d32; }
+.ds-copy {
+  margin-left: auto;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.ds-copy:hover { color: var(--slate); border-color: #aaa; }
+.ds-copy.ds-copy-ok { color: #2e7d32; border-color: #2e7d32; }
 .ds-item pre {
   font-size: 11px;
   white-space: pre-wrap;
