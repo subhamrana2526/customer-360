@@ -27,12 +27,36 @@ header .accent { color: var(--red); }
 header .tag { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
 header .back {
   display: inline-block;
-  margin-bottom: 8px;
   color: var(--red);
   text-decoration: none;
   font-size: 14px;
 }
 header .meta { color: var(--muted); font-size: 14px; margin-top: 4px; }
+
+/* Logo mark in simple headers (customer detail, MI product, stage1) */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.header-logo {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+/* Logo mark in app-header (homepage, MI dashboard) */
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
 
 /* App-level header (homepage + MI dashboard) — combined brand + tabs */
 .app-header {
